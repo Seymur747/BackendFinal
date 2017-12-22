@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbasesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Mesages">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="texts" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="writer_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="writer_email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="longText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="shortText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="users_id" Type="Int32" Nullable="false" />
+    <Property Name="category_id" Type="Int32" Nullable="false" />
+    <Property Name="image_id" Type="Int32" />
+    <Property Name="video_id" Type="Int32" />
+    <NavigationProperty Name="Users" Relationship="Self.News_fk0" FromRole="News" ToRole="Users" />
+    <NavigationProperty Name="News_category" Relationship="Self.News_fk1" FromRole="News" ToRole="News_category" />
+    <NavigationProperty Name="News_images" Relationship="Self.News_fk2" FromRole="News" ToRole="News_images" />
+    <NavigationProperty Name="News_videos" Relationship="Self.News_fk3" FromRole="News" ToRole="News_videos" />
+    <NavigationProperty Name="User_comment" Relationship="Self.User_comment_fk1" FromRole="News" ToRole="User_comment" />
+  </EntityType>
+  <EntityType Name="News_category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="category_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="News" Relationship="Self.News_fk1" FromRole="News_category" ToRole="News" />
+    <NavigationProperty Name="News_subcategory" Relationship="Self.News_subcategory_fk0" FromRole="News_category" ToRole="News_subcategory" />
+  </EntityType>
+  <EntityType Name="News_images">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="image_path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="image_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="image_volume" Type="Int32" />
+    <NavigationProperty Name="News" Relationship="Self.News_fk2" FromRole="News_images" ToRole="News" />
+  </EntityType>
+  <EntityType Name="News_subcategory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="subcategory_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="category_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="News_category" Relationship="Self.News_subcategory_fk0" FromRole="News_subcategory" ToRole="News_category" />
+  </EntityType>
+  <EntityType Name="News_videos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="video_path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="video_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="video_volume" Type="Int32" />
+    <NavigationProperty Name="News" Relationship="Self.News_fk3" FromRole="News_videos" ToRole="News" />
+  </EntityType>
+  <EntityType Name="Subscriber">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="users_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.Subscriber_fk0" FromRole="Subscriber" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User_category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="category_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.Users_fk0" FromRole="User_category" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User_comment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="texts" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="users_id" Type="Int32" Nullable="false" />
+    <Property Name="add_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="news_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="News" Relationship="Self.User_comment_fk1" FromRole="User_comment" ToRole="News" />
+    <NavigationProperty Name="Users" Relationship="Self.User_comment_fk0" FromRole="User_comment" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="names" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="category_id" Type="Int32" Nullable="false" />
+    <Property Name="passwords" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="News" Relationship="Self.News_fk0" FromRole="Users" ToRole="News" />
+    <NavigationProperty Name="Subscriber" Relationship="Self.Subscriber_fk0" FromRole="Users" ToRole="Subscriber" />
+    <NavigationProperty Name="User_category" Relationship="Self.Users_fk0" FromRole="Users" ToRole="User_category" />
+    <NavigationProperty Name="User_comment" Relationship="Self.User_comment_fk0" FromRole="Users" ToRole="User_comment" />
+  </EntityType>
+  <Association Name="News_fk0">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="News" Type="Self.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="News">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="News_fk1">
+    <End Role="News_category" Type="Self.News_category" Multiplicity="1" />
+    <End Role="News" Type="Self.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News_category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="News">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="News_fk2">
+    <End Role="News_images" Type="Self.News_images" Multiplicity="0..1" />
+    <End Role="News" Type="Self.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News_images">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="News">
+        <PropertyRef Name="image_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="News_fk3">
+    <End Role="News_videos" Type="Self.News_videos" Multiplicity="0..1" />
+    <End Role="News" Type="Self.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News_videos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="News">
+        <PropertyRef Name="video_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="User_comment_fk1">
+    <End Role="News" Type="Self.News" Multiplicity="1" />
+    <End Role="User_comment" Type="Self.User_comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User_comment">
+        <PropertyRef Name="news_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="News_subcategory_fk0">
+    <End Role="News_category" Type="Self.News_category" Multiplicity="1" />
+    <End Role="News_subcategory" Type="Self.News_subcategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News_category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="News_subcategory">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Subscriber_fk0">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Subscriber" Type="Self.Subscriber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Subscriber">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Users_fk0">
+    <End Role="User_category" Type="Self.User_category" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="User_comment_fk0">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="User_comment" Type="Self.User_comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User_comment">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbasesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Mesages" EntityType="Self.Mesages" />
+    <EntitySet Name="News" EntityType="Self.News" />
+    <EntitySet Name="News_category" EntityType="Self.News_category" />
+    <EntitySet Name="News_images" EntityType="Self.News_images" />
+    <EntitySet Name="News_subcategory" EntityType="Self.News_subcategory" />
+    <EntitySet Name="News_videos" EntityType="Self.News_videos" />
+    <EntitySet Name="Subscriber" EntityType="Self.Subscriber" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="User_category" EntityType="Self.User_category" />
+    <EntitySet Name="User_comment" EntityType="Self.User_comment" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="News_fk0" Association="Self.News_fk0">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="News" EntitySet="News" />
+    </AssociationSet>
+    <AssociationSet Name="News_fk1" Association="Self.News_fk1">
+      <End Role="News_category" EntitySet="News_category" />
+      <End Role="News" EntitySet="News" />
+    </AssociationSet>
+    <AssociationSet Name="News_fk2" Association="Self.News_fk2">
+      <End Role="News_images" EntitySet="News_images" />
+      <End Role="News" EntitySet="News" />
+    </AssociationSet>
+    <AssociationSet Name="News_fk3" Association="Self.News_fk3">
+      <End Role="News_videos" EntitySet="News_videos" />
+      <End Role="News" EntitySet="News" />
+    </AssociationSet>
+    <AssociationSet Name="User_comment_fk1" Association="Self.User_comment_fk1">
+      <End Role="News" EntitySet="News" />
+      <End Role="User_comment" EntitySet="User_comment" />
+    </AssociationSet>
+    <AssociationSet Name="News_subcategory_fk0" Association="Self.News_subcategory_fk0">
+      <End Role="News_category" EntitySet="News_category" />
+      <End Role="News_subcategory" EntitySet="News_subcategory" />
+    </AssociationSet>
+    <AssociationSet Name="Subscriber_fk0" Association="Self.Subscriber_fk0">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Subscriber" EntitySet="Subscriber" />
+    </AssociationSet>
+    <AssociationSet Name="Users_fk0" Association="Self.Users_fk0">
+      <End Role="User_category" EntitySet="User_category" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="User_comment_fk0" Association="Self.User_comment_fk0">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="User_comment" EntitySet="User_comment" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

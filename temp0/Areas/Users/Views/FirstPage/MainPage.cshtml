@@ -1,0 +1,582 @@
+﻿@model temp0.ViewModels.ViewsModels
+
+@{
+    ViewBag.Title = "MainPage";
+    Layout = "~/Areas/Users/Views/Shared/homes1.cshtml";
+}
+
+ <div class="container margin-top-30">
+            <div class="row">
+                <div class="row  fadeIn animated" style="visibility: visible;">
+                    <div class="col-md-8 col-sm-8  fadeIn animated" style="visibility: visible;">
+                        <!--====================LAYOUT-1======================-->
+                        <div class="layout_1 margin-bottom-30">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="heading-1"><span>Əsas xəbərlər</span></h3>
+                                    <div class="post-carousel-wrap">
+                                        <div class="post-carousel">
+                                            <!--=============SLIDER============-->
+
+                                      
+                                            <div id="owl-one" class="owl-carousel owl-theme">
+                                           
+
+                                              
+                                            <div class="item">
+                                                <div class="layout_1--item">
+                                                    <a href="Pages/page_magasin/post3.html">
+                                                        <span class="badge text-uppercase badge-overlay badge-world">şou</span>
+                                                        <div class="overlay"></div>
+                                                        <div class="texton">
+                                                            <img src="~/Fronts/images/magasin/03.jpg" class="img-responsive" alt="" />
+                                                            <div class="layout-detail padding-25  fadeIn animated" style="visibility: visible;">
+                                                                <h6>Tanınmış aktyor xəstəxanalıq oldu</h6>
+                                                                <div class="meta  fadeIn animated" style="visibility: visible;"><span class="author">by Alex R.</span><span class="date">Sep. 27, 2016</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                                                            
+
+                                            </div>
+                                            <!--===========END SLIDER=========-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--====================LAYOUT DOWN======================-->
+                        <div class="layout_2 margin-bottom-20  fadeIn animated" style="visibility: visible;">
+                            <div class="row  fadeIn animated" style="visibility: visible;">
+
+                                @foreach (var item in Model.Newss)
+                                     {
+                            <div class="col-md-3 col-sm-6  fadeIn animated" style="visibility: visible;">
+                                <div class="layout_2--item  fadeIn animated" style="visibility: visible;">
+                                    <div class="thumb  fadeIn animated" style="visibility: visible;">
+                                        <a href="Pages/page_econmy/post13.html"><img src="/Uploads/@item.News_images.image_path" class="img-responsive" alt=""></a>
+                                    </div>
+                                    <span class="cat">@item.News_category.category_name</span>
+                                    <h4><a href="Pages/page_econmy/post13.html">@item.shortText</a></h4>
+                                    <div class="meta  fadeIn animated" style="visibility: visible;"><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+                            }
+
+                            </div>
+                        </div>
+                        <!--====================LAYOUT-3======================-->
+                        <h3 class="heading-1"><span>Maraqlı</span></h3>
+                        <div class="row  fadeIn animated" style="visibility: visible;">
+                            <div class="col-md-6 col-sm-6 margin-bottom-30  fadeIn animated" style="visibility: visible;">
+                                <div class="layout_3--item  fadeIn animated" style="visibility: visible;">
+                                    <div class="thumb  fadeIn animated" style="visibility: visible;">
+                                        <a href="Pages/page_healthy/post3.html"><img src="~/Fronts/images/healthy/3.jpg" class="img-responsive" alt=""></a>
+                                    </div>
+                                    <span class="cat">Sağlamlıq</span>
+                                    <h4><a href="Pages/page_healthy/post3.html">Starbucks Is Giving Its Workers a Raise</a></h4>
+                                    <p>Model bədən quruluşuna sahib olmaq üçün bir çox qadınlar birdən-birə arıqlayır. Hazırda
+                                        bu çox asandır, çünki arıqladıcı vasitələr bazarı çox güclü bir vasitə təklif edir
+                                        - Coffee Srim.Həkimlər həyəcan təbili çalır.
+                                    </p>
+                                    <div class="meta  fadeIn animated" style="visibility: visible;"><span class="author">by Rana F.</span><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 margin-bottom-30  fadeIn animated" style="visibility: visible;">
+
+
+                                @foreach (var item in Model.Newss)
+                                {
+
+                                    <div class="layout_2--item row  fadeIn animated" style="visibility: visible;">
+                                    <div class="col-md-6 col-sm-5  fadeIn animated" style="visibility: visible;">
+                                        <div class="thumb  fadeIn animated" style="visibility: visible;">
+                                            <a href="Pages/page_healthy/post1.html"><img src="~/Fronts/images/healthy/1.jpg" class="img-responsive" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-7  fadeIn animated" style="visibility: visible;">
+                                        <span class="cat">@item.News_category.category_name</span>
+                                        <h4><a href="Pages/page_healthy/post1.html">Genetik və ya yaşlanmağa bağlı olaraq göz qapaqlarının çökmüş olması və göz uçurumun... </a></h4>
+                                        <div class="meta  fadeIn animated" style="visibility: visible;"><span class="date">Sep. 28, 2016</span></div>
+                                    </div>
+                                </div>
+                                <hr class="l2">
+                                }
+                                
+                             
+
+                            </div>
+                        </div>
+                        <!--====================LAYOUT-4======================-->
+                        <h3 class="heading-1"><span> Əsas xəbərlər</span></h3>
+                        <div class="row margin-bottom-30  fadeIn animated" style="visibility: visible;">
+
+                            @foreach (var item in Model.Newss)
+    {<div class="col-md-4 col-sm-4  fadeIn animated" style="visibility: visible;">
+                            <div class="layout_2--item  fadeIn animated" style="visibility: visible;">
+                                <div class="thumb  fadeIn animated" style="visibility: visible;">
+                                    <a href="Pages/page_social/post3.html"><img src="/Uploads/@item.News_images.image_path" class="img-responsive" alt=""></a>
+                                </div>
+                                <span class="cat">@item.News_category.category_name</span>
+                                <h4>
+                                    <a href="Pages/page_social/post3.html">
+                                       @item.shortText
+                                    </a>
+                                </h4>
+                                <div class="meta  fadeIn animated" style="visibility: visible;"><span class="author">by  @item.Users.names</span><span class="date">Sep. 28, 2016</span></div>
+                            </div>
+                        </div>
+
+}
+         
+                        </div>
+                        <!--====================LAYOUT-5======================-->
+                        <div class="layout_3  fadeIn animated" style="visibility: visible;">
+                            <div class="row  fadeIn animated" style="visibility: visible;">
+                                <div class="col-md-6 col-sm-6 margin-bottom-30  fadeIn animated" style="visibility: visible;">
+                                    <h3 class="heading-1"><span>İdman</span></h3>
+                                    <div class=" margin-bottom-30 layout_3--item  fadeIn animated" style="visibility: visible;">
+                                        <div class="thumb  fadeIn animated" style="visibility: visible;">
+                                            <a href="Pages/page_sport/post22.html"><img src="~/Fronts/images/sport/25.jpg" class="img-responsive" alt=""></a>
+                                        </div>
+                                        <h4 class="margin-top-10"><a href="Pages/page_sport/post22.html">Gəncə stadionunda son vəziyyət</a></h4>
+                                        <p>Gəncə şəhər stadionunun əsas meydançasına yeni salınan ot örtüyünə qulluq və texniki
+                                            baxış davam edir. Apasport.az saytının məlumatına görə...
+                                        </p>
+                                        <div class="meta  fadeIn animated" style="visibility: visible;"><span class="author">by Rana F.</span><span class="date">Sep. 28, 2016</span></div>
+                                    </div>
+
+                                    @foreach (var item in Model.Newss)
+                                    {<div class=" margin-bottom-30 layout_2--item row  fadeIn animated" style="visibility: visible;">
+    <div class="col-md-6  fadeIn animated" style="visibility: visible;">
+        <div class="thumb  fadeIn animated" style="visibility: visible;">
+            <div class="icon-24 video2  fadeIn animated" style="visibility: visible;"></div>
+            <a href="Pages/page_sport/post27.html"><img src="/Uploads/@item.News_images.image_path" class="img-responsive" alt=""></a>
+        </div>
+    </div>
+    <div class="col-md-6  fadeIn animated" style="visibility: visible;">
+        <span class="cat">@item.News_category.category_name</span>
+        <h4><a href="Pages/page_sport/post27.html">@item.shortText</a></h4>
+        <div class="meta  fadeIn animated" style="visibility: visible;"><span class="date">@item.add_date</span></div>
+    </div>
+</div>
+
+                                    }
+                                   
+
+
+
+                                    <div class="margin-bottom-30  fadeIn animated" style="visibility: visible;"></div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 margin-bottom-30  fadeIn animated" style="visibility: visible;">
+                                    <h3 class="heading-1"><span>Kriminal</span></h3>
+                                    <div class="layout_3--item fadeIn animated" style="visibility: visible;">
+                                        <div class="thumb  fadeIn animated" style="visibility: visible;">
+                                            <a href="Pages/page_criminal/post3.html"><img src="~/Fronts/images/criminal/3.jpeg" class="img-responsive" alt=""></a>
+                                        </div>
+                                        <h4 class="margin-top-10"><a href="Pages/page_criminal/post3.html">Xadimə işlədiyi evdən oğurluq edib</a></h4>
+                                        <p>
+                                            Binəqədi RPİ 7-ci PB əməkdaşlarının keçirdikləri əməliyyat-axtarış tədbirləri nəticəsində
+                                            avqustun 27-də rayonun...
+                                        </p>
+                                        <div class="meta  fadeIn animated" style="visibility: visible;">
+                                            <span class="author">by Rana F.</span><span class="date">Sep. 28, 2016</span>
+                                        </div>
+                                    </div>
+                                    @foreach (var item in Model.Newss)
+    {
+                                <div class=" margin-bottom-30 layout_2--item row  fadeIn animated" style="visibility: visible;">
+                                    <div class="col-md-6  fadeIn animated" style="visibility: visible;">
+                                        <div class="thumb  fadeIn animated" style="visibility: visible;">
+                                            <a href="Pages/page_criminal/post14.html"><img src="/Uploads/@item.News_images.image_path" class="img-responsive" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6  fadeIn animated" style="visibility: visible;">
+                                        <span class="cat">@item.News_category.category_name</span>
+                                        <h4><a href="Pages/page_criminal/post143.html">@item.shortText</a></h4>
+                                        <div class="meta  fadeIn animated" style="visibility: visible;"><span class="date">@item.add_date</span></div>
+                                    </div>
+                                </div>
+}
+                                  
+
+                                    <div class="margin-bottom-30 margin-bottom-30  fadeIn animated" style="visibility: visible;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--====================LAYOUT-6======================-->
+                        <h3 class="heading-1"><span>Dünya</span></h3>
+                        <div class="layout_3  fadeIn animated" style="visibility: visible;">
+                            <div class="row margin-bottom-30  fadeIn animated" style="visibility: visible;">
+                                <div class="col-md-8 col-sm-8 margin-bottom-30  fadeIn animated" style="visibility: visible;">
+                                    <div class="layout_3--item  fadeIn animated" style="visibility: visible;">
+                                        <div class="thumb  fadeIn animated" style="visibility: visible;">
+                                            <a href="Pages/page_world/post8.html"><img src="~/Fronts/images/world/8.jpg" class="img-responsive" alt=""></a>
+                                        </div>
+                                        <span class="cat">Dünya</span>
+                                        <h2><a href="Pages/page_world/post8.html">Putin ABŞ-dakı qalmaqallı səfiri geri çağırdı</a></h2>
+                                        <p>Rusiya prezidenti Vladimir Putinin sərəncamı ilə Anatoli Antonov bu ölkənin ABŞ-a yeni səfiri təyin olunub...</p>
+                                        <div class="meta  fadeIn animated" style="visibility: visible;"><span class="author">by Rana F.</span><span class="date">Sep. 28, 2016</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4  fadeIn animated" style="visibility: visible;">
+                                    <div class="layout_2--item margin-bottom-25  fadeIn animated" style="visibility: visible;">
+                                        <div class="thumb margin-bottom-10  fadeIn animated" style="visibility: visible;">
+                                            <div class="icon-24 gallery2  fadeIn animated" style="visibility: visible;"></div>
+                                            <a href="Pages/page_world/post24.html"><img src="~/Fronts/images/world/24.jpg" class="img-responsive" alt=""></a>
+                                        </div>
+                                        <span class="cat">Dünya</span>
+                                        <h4><a href="Pages/page_world/post24.html">Hansı ölkədə nə qədər nüvə silahı var?</a></h4>
+                                        <div class="meta  fadeIn animated" style="visibility: visible;"><span class="author">by Rana F.</span><span class="date">Sep. 28, 2016</span>
+                                        </div>
+                                    </div>
+                                    <div class="layout_2--item margin-bottom-25  fadeIn animated" style="visibility: visible;">
+                                        <div class="thumb margin-bottom-10  fadeIn animated" style="visibility: visible;">
+                                            <div class="icon-24 gallery2  fadeIn animated" style="visibility: visible;"></div>
+                                            <a href="Pages/page_world/post23.html"><img src="~/Fronts/images/world/23.jpg" class="img-responsive" alt=""></a>
+                                        </div>
+                                        <span class="cat">Dünya</span>
+                                        <h4><a href="Pages/page_world/post23.html">Nyu-Yorkda Tramp əleyhinə aksiya keçirilir</a></h4>
+                                        <div class="meta  fadeIn animated" style="visibility: visible;"><span class="author">by Rana F.</span><span class="date">Sep. 28, 2016</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="col-md-4 col-sm-4">
+                        <!--====================LAYOUT-ASIDE-SOCIAL======================-->
+                        <div class="side-widget margin-bottom-60">
+                            <h3 class="heading-1"><span>Sosial şəbəkə</span></h3>
+                            <div class="social">
+                                <div class="share s_facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </div>
+                                <div class="share s_linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </div>
+                                <div class="share s_plus">
+                                    <i class="fa fa-google-plus"></i>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--====================LAYOUT-ASIDE-2======================-->
+                        <div class="side-widget margin-bottom-60  fadeIn animated" style="visibility: visible;">
+                            <h3 class="heading-1"><span>baş xəbərlər</span></h3>
+                            <div class="layout_1--item margin-bottom-30  fadeIn animated" style="visibility: visible;">
+                                <a href="Pages/page_world/post36.html">
+                              <span class="badge text-uppercase badge-overlay badge-world">Dünya</span>
+                              <div class="overlay  fadeIn animated" style="visibility: visible;"></div>
+                              <img src="~/Fronts/images/world/36.jpeg" class="img-responsive" alt="">
+                              <div class="layout-detail padding-25  fadeIn animated" style="visibility: visible;">
+                                 <h6>İndoneziyanın Sumatra adasındakı Sinaburq vulkanı püskürüb.</h6>
+                                 <div class="meta  fadeIn animated" style="visibility: visible;"><span class="author">by Alex R.</span><span class="date">Sep. 27, 2016</span></div>
+                              </div>
+                           </a>
+                            </div>
+                            <div class="layout_1--item margin-bottom-30  fadeIn animated" style="visibility: visible;">
+                                <a href="tech.html">
+                              <span class="badge text-uppercase badge-overlay badge-tech">Yazarlar</span>
+                              <div class="overlay  fadeIn animated" style="visibility: visible;"></div>
+                              <img src="~/Fronts/images/tech/team-1.jpg" class="img-responsive" alt="">
+                              <div class="layout-detail padding-25  fadeIn animated" style="visibility: visible;">
+                                 <h6></h6>
+                              </div>
+                           </a>
+                            </div>
+                            <div class="layout_1--item  fadeIn animated" style="visibility: visible;">
+                                <a href="Pages/page_magasin/post3.html">
+                              <span class="badge text-uppercase badge-overlay badge-entertainment">Entertainment</span>
+                              <div class="overlay  fadeIn animated" style="visibility: visible;"></div>
+                              <img src="~/Fronts/images/magasin/03.jpg" class="img-responsive" alt="">
+                              <div class="layout-detail padding-25  fadeIn animated" style="visibility: visible;">
+                                 <h6>Tanınmış aktyor xəstəxanalıq oldu</h6>
+                                 <div class="meta  fadeIn animated" style="visibility: visible;">
+                                     <span class="author">by Alex R.</span><span class="date">Sep. 27, 2016</span>
+                                    </div>
+                              </div>
+                           </a>
+                            </div>
+                        </div>
+                        <!--====================LAYOUT-ASIDE-3======================-->
+                        <div class="side-widget margin-bottom-30  fadeIn animated" style="visibility: visible;">
+                            <h3 class="heading-1" style="margin-top:90px;"><span>Valyuta</span></h3>
+                            <div class="trending-box  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="col-md-12  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="layout_2--item margin-bottom-22px  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <div class="number  fadeIn" style="visibility: visible; animation-name: fadeIn;">USD</div>
+                                            <h4 class="margin-top-10">Alış: 1.7008</h4>
+                                            <h4 class="margin-top-10">Satış: 1.7020</h4>
+                                        </div>
+                                        <hr class="l4 margin-top-30 margin-bottom-20">
+                                    </div>
+                                    <div class="col-md-12  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="layout_2--item margin-bottom-22px  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <div class="number  fadeIn" style="visibility: visible; animation-name: fadeIn;">EUR</div>
+                                            <h4 class="margin-top-10">Alış: 1.7008</h4>
+                                            <h4 class="margin-top-10">Satış: 1.7020</h4>
+                                        </div>
+                                        <hr class="l4 margin-top-30 margin-bottom-20">
+                                    </div>
+                                    <div class="col-md-12  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="layout_2--item margin-bottom-22px  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <div class="number  fadeIn" style="visibility: visible; animation-name: fadeIn;">RUB</div>
+                                            <h4 class="margin-top-10">Alış: 1.7008</h4>
+                                            <h4 class="margin-top-10">Satış: 1.7020</h4>
+                                        </div>
+                                        <hr class="l4 margin-top-30 margin-bottom-20">
+                                    </div>
+                                    <div class="col-md-12  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="layout_2--item margin-bottom-22px  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <div class="number  fadeIn" style="visibility: visible; animation-name: fadeIn;">TRY</div>
+                                            <h4 class="margin-top-10">Alış: 1.7008</h4>
+                                            <h4 class="margin-top-10">Satış: 1.7020</h4>
+                                        </div>
+                                        <hr class="l4 margin-top-30 margin-bottom-20">
+                                    </div>
+                                    <div class="col-md-12  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="layout_2--item margin-bottom-22px  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <div class="number  fadeIn" style="visibility: visible; animation-name: fadeIn;">GBP</div>
+                                            <h4 class="margin-top-10">Alış: 1.7008</h4>
+                                            <h4 class="margin-top-10">Satış: 1.7020</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--====================LAYOUT-ASIDE-4======================-->
+                        <div class="side-widget margin-bottom-60  fadeIn animated" style="visibility: visible;">
+                            <h3 class="heading-1" style="margin-top:90px;"><span>Categories</span></h3>
+                            <ul class="categories">
+                                @foreach (var item in Model.News_Categorys)
+                                {<li><a href="economy.html">@item.category_name</a> <span>33</span></li>
+
+                                }
+                                
+                      
+                            </ul>
+                            <div class="clearfix  fadeIn animated" style="visibility: visible;"></div>
+                        </div>
+                        <div class="side-widget margin-bottom-50  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <h3 class="heading-1"><span>Ən çox baxılanlar</span></h3>
+                            <ul class="side-posts">
+                                <li><span>25.08</span> <a href="Pages/page_econmy/post11.html">Neft Fondu bu il “Azəri-Çıraq-Günəşli”dən 3,6 milyard dollar qazanıb</a></li>
+                                <li><span>23.08</span> <a href="Pages/page_social/post11.html">Naxçıvanın daxili işlər naziri təyin olundu</a></li>
+                                <li><span>22.08</span> <a href="Pages/page_magasin/post11.html">Xalq artisti ingilis əri ilə istirahətdə</a></li>
+                                <li><span>21.08</span> <a href="Pages/page_healthy/post11.html">Arıqlamağa kömək edən, ürəyi qoruyan, xərçəngi müalicə edən ƏDVİYYAT</a></li>
+                                <li><span>20.08</span> <a href="Pages/page_criminal/post11.html">Neftçala sakini traktorun altında qalaraq öldü</a></li>
+                                <li><span>19.08</span> <a href="Pages/page_sport/post11.html">Fransa millisinin üzvü "Yuventus"da</a></li>
+                                <li><span>18.08</span> <a href="Pages/page_world/post11.html">Amerikalı aktyor vəfat etdi</a></li>
+                                <li><span>25.08</span> <a href="Pages/page_econmy/post21.html">Sosial sahələrə nə qədər pul xərclənib?</a></li>
+                                <li><span>23.08</span> <a href="Pages/page_social/post21.html">Cəlilabad rayon sakini Hafis Quluyev ötən gün rayondakı dükanlardan birindən 10 kq-lıq un alıb</a></li>
+                                <li><span>22.08</span> <a href="Pages/page_magasin/post21.html">İlqar Mikayıloğlunu su ilanı "sancıb"mış</a></li>
+                                <li><span>22.08</span> <a href="Pages/page_healthy/post21.html">Hər gün ilıq su için - Nəticəsi inanılmazdır</a></li>
+                                <li><span>17.08</span> <a href="Pages/page_criminal/post21.html">Şəmkirdə sevgilisinə görə döyülən gənc oğlan kor oldu</a></li>
+                                <li><span>16.08</span> <a href="Pages/page_sport/post21.html">Qadın boksçularımız 3 medal qazandı</a></li>
+                                <li><span>15.08</span> <a href="Pages/page_world/post21.html">Londonda hava limanında partlayış</a></li>
+                            </ul>
+                        </div>
+                        <!--====================ADVERTSMENT======================-->
+                        <div class="ads ad-300 margin-bottom-60  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <h3 class="heading-1" style="margin-top:60px;"><span>Advertsment</span></h3>
+                            <img src="~/Fronts/images/Add/300x250.jpg" class="img-responsive" alt="">
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <!--====================VIDEO CAROUSEL======================-->
+        <h3 class="heading-1"><span>Videolar</span></h3>
+        <div class=" margin-top-30   fadeIn animated margin-bottom-60">
+            <div class="margin-top-30 video-carousel-wrap bg-dark">
+                <div class="container">
+                    <div class="clearfix"></div>
+                    <div class="col-md-8 col-sm-7 no-padding">
+                        <div class="video-container">
+                            <video id="video" width="400" onclick="togglePause()" controls>
+                                <source src="video/01.mp4" type="video/mp4">
+                            </video>
+                            <div class="layout_1--item vc-item1 active">
+                                <div class="video-play"></div>
+                                <span class="badge text-uppercase badge-overlay badge-tech">Lorem</span>
+                                <div class="overlay"></div>
+                                <img src="~/Fronts/images/videos/1.png" class="img-responsive" alt="" />
+                                <div class="layout-detail padding-25">
+                                    <h4>Avtobusda sernişin sürücü ilə dava etdi</h4>
+                                    <div class="meta"><span class="author">by Firuze R.</span><span class="date">Sep. 27, 2016</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout_1--item vc-item2">
+                                <div class="video-play"></div>
+                                <span class="badge text-uppercase badge-overlay badge-tech">Lorem</span>
+                                <div class="overlay"></div>
+                                <img src="~/Fronts/images/videos/02.jpg" class="img-responsive" alt="" />
+                                <div class="layout-detail padding-25">
+                                    <h4>Ünvanlı sosial yardım artılacaq</h4>
+                                    <div class="meta"><span class="author">by Firuze R.</span><span class="date">Sep. 27, 2016</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout_1--item vc-item3">
+                                <div class="video-play"></div>
+                                <span class="badge text-uppercase badge-overlay badge-tech">Tech</span>
+                                <div class="overlay"></div>
+                                <img src="~/Fronts/images/videos/3.jpg" class="img-responsive" alt="" />
+                                <div class="layout-detail padding-25">
+                                    <h4>Yeni ana olan mugennni ƏRİ VƏ ÖVLADI İLƏ- Shou biznes</h4>
+                                    <div class="meta"><span class="author">by Firuze R
+                                 </span><span class="date">Sep. 27, 2016</span><span class="comments">3</span>
+                                        <span class="views">284</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout_1--item vc-item4">
+                                <div class="video-play"></div>
+                                <span class="badge text-uppercase badge-overlay badge-tech">Lorem</span>
+                                <div class="overlay"></div>
+                                <img src="~/Fronts/images/videos/4.jpg" class="img-responsive" alt="" />
+                                <div class="layout-detail padding-25">
+                                    <h4>İrana gedənlər məcburi sığortalanacaqlar I Xezer Xeber
+                                        </h4>
+                                    <div class="meta"><span class="author">by Firuze R.</span><span class="date">Sep. 27, 2016</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout_1--item vc-item4">
+                                <div class="video-play"></div>
+                                <span class="badge text-uppercase badge-overlay badge-tech">Lorem</span>
+                                <div class="overlay"></div>
+                                <img src="~/Fronts/images/videos/4.jpg" class="img-responsive" alt="" />
+                                <div class="layout-detail padding-25">
+                                    <h4>İrana gedənlər məcburi sığortalanacaqlar I Xezer Xeber
+                                        </h4>
+                                    <div class="meta"><span class="author">by Firuze R.</span><span class="date">Sep. 27, 2016</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-5 no-padding">
+                        <div class="now-playing">
+                            <i class="fa fa-play"></i>
+                            <p>Ən son baxılanlar</p>
+                        </div>
+                        <div class="video-list">
+                            <ul>
+                                <li class="vl-video1">
+                                    <div class="thumb">
+                                        <div class="overlay-alt"></div>
+                                        <div class="video-play-32"></div>
+                                        <img src="~/Fronts/images/videos/1.png" class="img-responsive" alt="" />
+                                    </div>
+                                    <p>Avtobusda sernişin sürücü ilə dava etdi</p>
+                                </li>
+                                <li class="vl-video2">
+                                    <div class="thumb">
+                                        <div class="overlay-alt"></div>
+                                        <div class="video-play-32"></div>
+                                        <img src="~/Fronts/images/videos/02.jpg" class="img-responsive" alt="" />
+                                    </div>
+                                    <p>Ünvanlı sosial yardım artılacaq</p>
+                                </li>
+                                <li class="vl-video3">
+                                    <div class="thumb">
+                                        <div class="overlay-alt"></div>
+                                        <div class="video-play-32"></div>
+                                        <img src="~/Fronts/images/videos/3.jpg" class="img-responsive" alt="" />
+                                    </div>
+                                    <p>Yeni ana olan müğənni əri və övladı ilə</p>
+                                </li>
+                                <li class="vl-video2">
+                                    <div class="thumb">
+                                        <div class="overlay-alt"></div>
+                                        <div class="video-play-32"></div>
+                                        <img src="~/Fronts/images/videos/4.jpg" class="img-responsive" alt="" />
+                                    </div>
+                                    <p>İrana gedənlər məcburi sığortalanacaqlar I Xezer Xeber
+                                            </p>
+                                </li>
+                                <li class="vl-video2">
+                                    <div class="thumb">
+                                        <div class="overlay-alt"></div>
+                                        <div class="video-play-32"></div>
+                                        <img src="~/Fronts/images/videos/4.jpg" class="img-responsive" alt="" />
+                                    </div>
+                                    <p>İrana gedənlər məcburi sığortalanacaqlar I Xezer Xeber
+                                            </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container  fadeIn animated" style="visibility: visible;">
+            <!--====================RIGHT-SIDE-DOWN======================-->
+            <div class="row margin-bottom-30  fadeIn animated" style="visibility: visible;">
+                <div class="col-md-8 col-sm-8 margin-bottom-30  fadeIn animated" style="visibility: visible;">
+                    <h3 class="heading-1"><span>Maraqlı</span></h3>
+                    <!--====================LAYOUT-LIST-======================-->
+                    @foreach (var item in Model.Newss)
+    {<div class="layout_3--item row  fadeIn animated" style="visibility: visible;">
+                    <div class="col-md-6  fadeIn animated" style="visibility: visible;">
+                        <span class="badge text-uppercase badge-overlay badge-entertainment">@item.News_category.category_name</span>
+                        <div class="thumb  fadeIn animated" style="visibility: visible;">
+                            <a href="Pages/page_magasin/post15.html"><img src="/Uploads/@item.News_images.image_path" class="img-responsive" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6  fadeIn animated" style="visibility: visible;">
+                        <h4><a href="Pages/page_magasin/post15.html">@item.shortText</a></h4>
+                        <p>@item.longText</p>
+                        <div class="meta  fadeIn animated" style="visibility: visible;"><span class="author">by @item.Users.names</span><span class="date">Sep. 28, 2016</span></div>
+                        <a href="Pages/page_magasin/post15.html" class="rmore2">Read</a>
+                    </div>
+                </div>
+                <hr class="l4">
+
+}
+                 
+                    <!--====================LAYOUT-END_LIST-======================-->
+                </div>
+                <aside class="col-md-4 col-sm-4">
+                    <!--====================LAYOUT-ASIDE_7-======================-->
+                    <div class="side-widget margin-bottom-30  fadeIn animated" style="visibility: visible;">
+                        <h3 class="heading-1"><span>Sağlamlıq</span></h3>
+                        <ul class="trending-text">
+                            <li>
+                                <em>1</em>
+                                <p><a href="Pages/page_healthy/post14.html">Qara cirə min dərdin dərmanıdır - Bunları mütləq bilməlisiniz...</a> <span>Sep 26, 2016</span></p>
+                            </li>
+                            <li>
+                                <em>2</em>
+                                <p><a href="Pages/page_healthy/post15.html">Kalori yandırmaq bu qədər asan və rahat</a> <span>Sep 26, 2016</span></p>
+                            </li>
+                            <li>
+                                <em>3</em>
+                                <p><a href="Pages/page_healthy/post16.html">Sağlam və gözəl olmaq istəyənlər YEMİŞ YESİN</a> <span>Sep 26, 2016</span></p>
+                            </li>
+                            <li>
+                                <em>2</em>
+                                <p><a href="Pages/page_healthy/post17.html">MENİNGİT. Səbəblər, simptomlar, müalicə</a> <span>Sep 26, 2016</span></p>
+                            </li>
+                            <li>
+                                <em>5</em>
+                                <p><a href="Pages/page_healthy/post18.html">Diabet və qan təzyiqinə qənim kəsilən MÖCÜZƏVİ İÇKİ</a> <span>Sep 26, 2016</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--====================LAYOUT-ASIDE_8-======================-->
+                    <div class="ads ad-300 margin-bottom-60  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <h3 class="heading-1" style="margin-top:60px;"><span>Advertsment</span></h3>
+                        <img src="~/Fronts/images/Add/300x250.jpg" class="img-responsive" alt="">
+                    </div>
+                </aside>
+            </div>
+        </div>

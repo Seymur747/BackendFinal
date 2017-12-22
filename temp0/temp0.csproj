@@ -1,0 +1,1142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DA96BCB-A8C5-45BA-BC93-C3B307FBB35C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>temp0</RootNamespace>
+    <AssemblyName>temp0</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\MesagesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\NewsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\News_categoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\News_imagesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\News_subcategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\News_videosController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SubscribersController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
+    <Compile Include="Areas\Admin\Controllers\User_categoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\User_commentController.cs" />
+    <Compile Include="Areas\Users\Controllers\FirstPageController.cs" />
+    <Compile Include="Areas\Users\UsersAreaRegistration.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Mesages.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\News.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\News_category.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\News_images.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\News_subcategory.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\News_videos.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Subscriber.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Users.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User_category.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User_comment.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ViewsModels.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\css\sb-admin.css" />
+    <Content Include="Assets\css\sb-admin.min.css" />
+    <Content Include="Assets\js\sb-admin-charts.js" />
+    <Content Include="Assets\js\sb-admin-charts.min.js" />
+    <Content Include="Assets\js\sb-admin-datatables.js" />
+    <Content Include="Assets\js\sb-admin-datatables.min.js" />
+    <Content Include="Assets\js\sb-admin.js" />
+    <Content Include="Assets\js\sb-admin.min.js" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Assets\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Assets\vendor\chart.js\Chart.bundle.js" />
+    <Content Include="Assets\vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="Assets\vendor\chart.js\Chart.js" />
+    <Content Include="Assets\vendor\chart.js\Chart.min.js" />
+    <Content Include="Assets\vendor\datatables\dataTables.bootstrap4.css" />
+    <Content Include="Assets\vendor\datatables\dataTables.bootstrap4.js" />
+    <Content Include="Assets\vendor\datatables\jquery.dataTables.js" />
+    <Content Include="Assets\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="Assets\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Assets\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="Assets\vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="Assets\vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="Assets\vendor\jquery\jquery.js" />
+    <Content Include="Assets\vendor\jquery\jquery.min.js" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Fronts\404.html" />
+    <Content Include="Fronts\asp.net.txt" />
+    <Content Include="Fronts\asset\css\animation.css" />
+    <Content Include="Fronts\asset\css\design.css" />
+    <Content Include="Fronts\asset\css\responsive.css" />
+    <Content Include="Fronts\asset\css\responsive.min.css" />
+    <Content Include="Fronts\asset\css\slicknav.css" />
+    <Content Include="Fronts\asset\css\style.css" />
+    <Content Include="Fronts\asset\css\style.min.css" />
+    <Content Include="Fronts\asset\css\superfish.css" />
+    <Content Include="Fronts\contact.html" />
+    <Content Include="Fronts\criminal.html" />
+    <Content Include="Fronts\economy.html" />
+    <Content Include="Fronts\fonts\fontawesome-webfont5b62.svg" />
+    <Content Include="Fronts\food_health.html" />
+    <Content Include="Fronts\htmlBasliq.txt" />
+    <Content Include="Fronts\images\Add\300x250-2.jpg" />
+    <Content Include="Fronts\images\Add\300x250.jpg" />
+    <Content Include="Fronts\images\Add\468x60.jpg" />
+    <Content Include="Fronts\images\Add\728x90.jpg" />
+    <Content Include="Fronts\images\author.png" />
+    <Content Include="Fronts\images\comments\avatar.png" />
+    <Content Include="Fronts\images\comments\avatar2.png" />
+    <Content Include="Fronts\images\criminal\1.jpeg" />
+    <Content Include="Fronts\images\criminal\10.jpeg" />
+    <Content Include="Fronts\images\criminal\11.jpg" />
+    <Content Include="Fronts\images\criminal\12.jpeg" />
+    <Content Include="Fronts\images\criminal\13.jpg" />
+    <Content Include="Fronts\images\criminal\14.jpg" />
+    <Content Include="Fronts\images\criminal\15.jpeg" />
+    <Content Include="Fronts\images\criminal\16.jpeg" />
+    <Content Include="Fronts\images\criminal\17.jpeg" />
+    <Content Include="Fronts\images\criminal\18.jpeg" />
+    <Content Include="Fronts\images\criminal\18.jpg" />
+    <Content Include="Fronts\images\criminal\19.jpeg" />
+    <Content Include="Fronts\images\criminal\2.jpeg" />
+    <Content Include="Fronts\images\criminal\20.jpeg" />
+    <Content Include="Fronts\images\criminal\21.jpg" />
+    <Content Include="Fronts\images\criminal\22.jpeg" />
+    <Content Include="Fronts\images\criminal\23.jpeg" />
+    <Content Include="Fronts\images\criminal\24.jpeg" />
+    <Content Include="Fronts\images\criminal\25.jpg" />
+    <Content Include="Fronts\images\criminal\26.jpeg" />
+    <Content Include="Fronts\images\criminal\27.jpeg" />
+    <Content Include="Fronts\images\criminal\28.jpeg" />
+    <Content Include="Fronts\images\criminal\29.jpeg" />
+    <Content Include="Fronts\images\criminal\3.jpeg" />
+    <Content Include="Fronts\images\criminal\30.jpeg" />
+    <Content Include="Fronts\images\criminal\31.jpeg" />
+    <Content Include="Fronts\images\criminal\32.jpeg" />
+    <Content Include="Fronts\images\criminal\33.jpeg" />
+    <Content Include="Fronts\images\criminal\34.jpeg" />
+    <Content Include="Fronts\images\criminal\35.jpeg" />
+    <Content Include="Fronts\images\criminal\36.png" />
+    <Content Include="Fronts\images\criminal\37.jpeg" />
+    <Content Include="Fronts\images\criminal\38.jpeg" />
+    <Content Include="Fronts\images\criminal\39.jpeg" />
+    <Content Include="Fronts\images\criminal\4.jpeg" />
+    <Content Include="Fronts\images\criminal\40.jpeg" />
+    <Content Include="Fronts\images\criminal\41.jpeg" />
+    <Content Include="Fronts\images\criminal\42.jpeg" />
+    <Content Include="Fronts\images\criminal\43.jpeg" />
+    <Content Include="Fronts\images\criminal\44.jpeg" />
+    <Content Include="Fronts\images\criminal\45.jpeg" />
+    <Content Include="Fronts\images\criminal\46.jpeg" />
+    <Content Include="Fronts\images\criminal\47.jpeg" />
+    <Content Include="Fronts\images\criminal\48.jpeg" />
+    <Content Include="Fronts\images\criminal\49.jpeg" />
+    <Content Include="Fronts\images\criminal\5.jpeg" />
+    <Content Include="Fronts\images\criminal\50.jpeg" />
+    <Content Include="Fronts\images\criminal\51.jpeg" />
+    <Content Include="Fronts\images\criminal\6.jpeg" />
+    <Content Include="Fronts\images\criminal\7.jpeg" />
+    <Content Include="Fronts\images\criminal\8.jpg" />
+    <Content Include="Fronts\images\criminal\9.jpeg" />
+    <Content Include="Fronts\images\economy\01.jpeg" />
+    <Content Include="Fronts\images\economy\02.jpeg" />
+    <Content Include="Fronts\images\economy\03.jpeg" />
+    <Content Include="Fronts\images\economy\04.jpg" />
+    <Content Include="Fronts\images\economy\05.jpg" />
+    <Content Include="Fronts\images\economy\06.jpg" />
+    <Content Include="Fronts\images\economy\07.jpeg" />
+    <Content Include="Fronts\images\economy\08.jpeg" />
+    <Content Include="Fronts\images\economy\09.jpeg" />
+    <Content Include="Fronts\images\economy\10.jpeg" />
+    <Content Include="Fronts\images\economy\11.jpeg" />
+    <Content Include="Fronts\images\economy\12.jpeg" />
+    <Content Include="Fronts\images\economy\13.jpeg" />
+    <Content Include="Fronts\images\economy\14.jpeg" />
+    <Content Include="Fronts\images\economy\15.jpeg" />
+    <Content Include="Fronts\images\economy\16.jpeg" />
+    <Content Include="Fronts\images\economy\17.jpeg" />
+    <Content Include="Fronts\images\economy\18.jpeg" />
+    <Content Include="Fronts\images\economy\19.jpeg" />
+    <Content Include="Fronts\images\economy\20.jpeg" />
+    <Content Include="Fronts\images\economy\21.jpeg" />
+    <Content Include="Fronts\images\economy\22.jpeg" />
+    <Content Include="Fronts\images\economy\23.jpeg" />
+    <Content Include="Fronts\images\economy\24.jpeg" />
+    <Content Include="Fronts\images\economy\25.jpeg" />
+    <Content Include="Fronts\images\economy\26.jpeg" />
+    <Content Include="Fronts\images\economy\27.jpeg" />
+    <Content Include="Fronts\images\economy\28.jpeg" />
+    <Content Include="Fronts\images\economy\29.jpeg" />
+    <Content Include="Fronts\images\economy\30.jpeg" />
+    <Content Include="Fronts\images\economy\31.jpeg" />
+    <Content Include="Fronts\images\economy\32.png" />
+    <Content Include="Fronts\images\economy\33.jpeg" />
+    <Content Include="Fronts\images\economy\p1.jpg" />
+    <Content Include="Fronts\images\economy\p2.jpg" />
+    <Content Include="Fronts\images\economy\p3.jpg" />
+    <Content Include="Fronts\images\economy\p4.jpg" />
+    <Content Include="Fronts\images\economy\p5.jpeg" />
+    <Content Include="Fronts\images\flogo.png" />
+    <Content Include="Fronts\images\flogo2.png" />
+    <Content Include="Fronts\images\healthy\1.jpg" />
+    <Content Include="Fronts\images\healthy\10.jpeg" />
+    <Content Include="Fronts\images\healthy\11.jpeg" />
+    <Content Include="Fronts\images\healthy\12.jpg" />
+    <Content Include="Fronts\images\healthy\13.jpeg" />
+    <Content Include="Fronts\images\healthy\14.jpg" />
+    <Content Include="Fronts\images\healthy\15.jpg" />
+    <Content Include="Fronts\images\healthy\16.jpeg" />
+    <Content Include="Fronts\images\healthy\17.jpeg" />
+    <Content Include="Fronts\images\healthy\18.jpg" />
+    <Content Include="Fronts\images\healthy\19.jpeg" />
+    <Content Include="Fronts\images\healthy\2.jpg" />
+    <Content Include="Fronts\images\healthy\20.jpeg" />
+    <Content Include="Fronts\images\healthy\21.jpg" />
+    <Content Include="Fronts\images\healthy\22.jpg" />
+    <Content Include="Fronts\images\healthy\23.jpg" />
+    <Content Include="Fronts\images\healthy\24.jpg" />
+    <Content Include="Fronts\images\healthy\25.jpg" />
+    <Content Include="Fronts\images\healthy\26.jpg" />
+    <Content Include="Fronts\images\healthy\27.jpg" />
+    <Content Include="Fronts\images\healthy\28.jpeg" />
+    <Content Include="Fronts\images\healthy\29.jpeg" />
+    <Content Include="Fronts\images\healthy\3.jpg" />
+    <Content Include="Fronts\images\healthy\4.jpg" />
+    <Content Include="Fronts\images\healthy\5.jpg" />
+    <Content Include="Fronts\images\healthy\6.jpg" />
+    <Content Include="Fronts\images\healthy\7.jpg" />
+    <Content Include="Fronts\images\healthy\8.jpeg" />
+    <Content Include="Fronts\images\healthy\9.jpeg" />
+    <Content Include="Fronts\images\Icon\comment.png" />
+    <Content Include="Fronts\images\Icon\comment2.png" />
+    <Content Include="Fronts\images\Icon\eye.png" />
+    <Content Include="Fronts\images\Icon\eye2.png" />
+    <Content Include="Fronts\images\Icon\gallery2.png" />
+    <Content Include="Fronts\images\Icon\mail.png" />
+    <Content Include="Fronts\images\Icon\play.png" />
+    <Content Include="Fronts\images\Icon\star-full.png" />
+    <Content Include="Fronts\images\Icon\star-half.png" />
+    <Content Include="Fronts\images\Icon\tick.png" />
+    <Content Include="Fronts\images\Icon\user.png" />
+    <Content Include="Fronts\images\Icon\video.png" />
+    <Content Include="Fronts\images\Icon\video2.png" />
+    <Content Include="Fronts\images\img_404.png" />
+    <Content Include="Fronts\images\logo.png" />
+    <Content Include="Fronts\images\magasin\01.jpg" />
+    <Content Include="Fronts\images\magasin\010.jpg" />
+    <Content Include="Fronts\images\magasin\02.jpg" />
+    <Content Include="Fronts\images\magasin\03.jpg" />
+    <Content Include="Fronts\images\magasin\04.jpg" />
+    <Content Include="Fronts\images\magasin\05.Jpeg" />
+    <Content Include="Fronts\images\magasin\06.jpg" />
+    <Content Include="Fronts\images\magasin\07.jpg" />
+    <Content Include="Fronts\images\magasin\08.jpeg" />
+    <Content Include="Fronts\images\magasin\10.jpg" />
+    <Content Include="Fronts\images\magasin\11.jpg" />
+    <Content Include="Fronts\images\magasin\12.png" />
+    <Content Include="Fronts\images\magasin\13.jpg" />
+    <Content Include="Fronts\images\magasin\14.jpg" />
+    <Content Include="Fronts\images\magasin\15.jpeg" />
+    <Content Include="Fronts\images\magasin\16.jpg" />
+    <Content Include="Fronts\images\magasin\17.jpeg" />
+    <Content Include="Fronts\images\magasin\18.jpg" />
+    <Content Include="Fronts\images\magasin\19.jpg" />
+    <Content Include="Fronts\images\magasin\20.jpg" />
+    <Content Include="Fronts\images\magasin\21.jpg" />
+    <Content Include="Fronts\images\magasin\22.jpg" />
+    <Content Include="Fronts\images\magasin\23.jpg" />
+    <Content Include="Fronts\images\magasin\24.jpg" />
+    <Content Include="Fronts\images\magasin\25.jpg" />
+    <Content Include="Fronts\images\magasin\26.jpg" />
+    <Content Include="Fronts\images\magasin\27.png" />
+    <Content Include="Fronts\images\magasin\29.jpg" />
+    <Content Include="Fronts\images\magasin\30.jpg" />
+    <Content Include="Fronts\images\magasin\31.png" />
+    <Content Include="Fronts\images\magasin\32.jpg" />
+    <Content Include="Fronts\images\magasin\33.jpg" />
+    <Content Include="Fronts\images\magasin\34.jpg" />
+    <Content Include="Fronts\images\magasin\35.jpg" />
+    <Content Include="Fronts\images\magasin\36.jpg" />
+    <Content Include="Fronts\images\magasin\37.jpg" />
+    <Content Include="Fronts\images\magasin\38.jpg" />
+    <Content Include="Fronts\images\magasin\39.jpeg" />
+    <Content Include="Fronts\images\magasin\40.jpg" />
+    <Content Include="Fronts\images\magasin\41.jpg" />
+    <Content Include="Fronts\images\magasin\42.PNG" />
+    <Content Include="Fronts\images\magasin\43.JPG" />
+    <Content Include="Fronts\images\next.png" />
+    <Content Include="Fronts\images\prev.png" />
+    <Content Include="Fronts\images\social\010.jpeg" />
+    <Content Include="Fronts\images\social\1.jpeg" />
+    <Content Include="Fronts\images\social\10.JPG" />
+    <Content Include="Fronts\images\social\11.jpeg" />
+    <Content Include="Fronts\images\social\12.jpg" />
+    <Content Include="Fronts\images\social\13.jpg" />
+    <Content Include="Fronts\images\social\14.jpeg" />
+    <Content Include="Fronts\images\social\15.jpeg" />
+    <Content Include="Fronts\images\social\16.jpeg" />
+    <Content Include="Fronts\images\social\17.jpg" />
+    <Content Include="Fronts\images\social\18.jpg" />
+    <Content Include="Fronts\images\social\19.jpeg" />
+    <Content Include="Fronts\images\social\2.jpeg" />
+    <Content Include="Fronts\images\social\20.jpg" />
+    <Content Include="Fronts\images\social\21.png" />
+    <Content Include="Fronts\images\social\22.jpg" />
+    <Content Include="Fronts\images\social\23.jpeg" />
+    <Content Include="Fronts\images\social\24.jpg" />
+    <Content Include="Fronts\images\social\25.jpeg" />
+    <Content Include="Fronts\images\social\26.jpeg" />
+    <Content Include="Fronts\images\social\27.jpeg" />
+    <Content Include="Fronts\images\social\28.jpeg" />
+    <Content Include="Fronts\images\social\29.jpeg" />
+    <Content Include="Fronts\images\social\3.jpg" />
+    <Content Include="Fronts\images\social\30.jpeg" />
+    <Content Include="Fronts\images\social\31.jpeg" />
+    <Content Include="Fronts\images\social\32.jpeg" />
+    <Content Include="Fronts\images\social\33.jpeg" />
+    <Content Include="Fronts\images\social\34.jpeg" />
+    <Content Include="Fronts\images\social\35.jpeg" />
+    <Content Include="Fronts\images\social\36.jpeg" />
+    <Content Include="Fronts\images\social\37.jpeg" />
+    <Content Include="Fronts\images\social\38.jpeg" />
+    <Content Include="Fronts\images\social\39.jpeg" />
+    <Content Include="Fronts\images\social\4.jpg" />
+    <Content Include="Fronts\images\social\40.jpeg" />
+    <Content Include="Fronts\images\social\41.jpeg" />
+    <Content Include="Fronts\images\social\42.jpeg" />
+    <Content Include="Fronts\images\social\43.jpeg" />
+    <Content Include="Fronts\images\social\44.png" />
+    <Content Include="Fronts\images\social\45.jpeg" />
+    <Content Include="Fronts\images\social\46.jpeg" />
+    <Content Include="Fronts\images\social\47.jpeg" />
+    <Content Include="Fronts\images\social\48.jpeg" />
+    <Content Include="Fronts\images\social\49.jpeg" />
+    <Content Include="Fronts\images\social\5.jpeg" />
+    <Content Include="Fronts\images\social\50.jpeg" />
+    <Content Include="Fronts\images\social\51.jpeg" />
+    <Content Include="Fronts\images\social\52.jpeg" />
+    <Content Include="Fronts\images\social\53.jpeg" />
+    <Content Include="Fronts\images\social\54.jpeg" />
+    <Content Include="Fronts\images\social\55.jpeg" />
+    <Content Include="Fronts\images\social\56.jpeg" />
+    <Content Include="Fronts\images\social\57.jpeg" />
+    <Content Include="Fronts\images\social\59.jpeg" />
+    <Content Include="Fronts\images\social\6.jpeg" />
+    <Content Include="Fronts\images\social\60.jpeg" />
+    <Content Include="Fronts\images\social\61.jpeg" />
+    <Content Include="Fronts\images\social\62.jpeg" />
+    <Content Include="Fronts\images\social\63.jpeg" />
+    <Content Include="Fronts\images\social\64.jpeg" />
+    <Content Include="Fronts\images\social\65.jpeg" />
+    <Content Include="Fronts\images\social\7.jpeg" />
+    <Content Include="Fronts\images\social\8.jpeg" />
+    <Content Include="Fronts\images\social\9.jpg" />
+    <Content Include="Fronts\images\sport\01.jpeg" />
+    <Content Include="Fronts\images\sport\02.jpg" />
+    <Content Include="Fronts\images\sport\03.jpg" />
+    <Content Include="Fronts\images\sport\04.jpg" />
+    <Content Include="Fronts\images\sport\05.jpg" />
+    <Content Include="Fronts\images\sport\07.jpg" />
+    <Content Include="Fronts\images\sport\08.jpg" />
+    <Content Include="Fronts\images\sport\09.jpg" />
+    <Content Include="Fronts\images\sport\10.jpg" />
+    <Content Include="Fronts\images\sport\11.jpg" />
+    <Content Include="Fronts\images\sport\12.jpg" />
+    <Content Include="Fronts\images\sport\13.jpg" />
+    <Content Include="Fronts\images\sport\14.jpg" />
+    <Content Include="Fronts\images\sport\15.jpg" />
+    <Content Include="Fronts\images\sport\16.jpg" />
+    <Content Include="Fronts\images\sport\17.jpg" />
+    <Content Include="Fronts\images\sport\18.jpg" />
+    <Content Include="Fronts\images\sport\19.jpg" />
+    <Content Include="Fronts\images\sport\21.jpg" />
+    <Content Include="Fronts\images\sport\22.jpg" />
+    <Content Include="Fronts\images\sport\24.jpg" />
+    <Content Include="Fronts\images\sport\25.jpg" />
+    <Content Include="Fronts\images\sport\26.jpg" />
+    <Content Include="Fronts\images\sport\27.jpg" />
+    <Content Include="Fronts\images\sport\28.jpeg" />
+    <Content Include="Fronts\images\sport\29.jpg" />
+    <Content Include="Fronts\images\sport\30.jpg" />
+    <Content Include="Fronts\images\sport\31.jpg" />
+    <Content Include="Fronts\images\sport\32.jpg" />
+    <Content Include="Fronts\images\sport\33.jpg" />
+    <Content Include="Fronts\images\sport\34.jpg" />
+    <Content Include="Fronts\images\sport\35.jpg" />
+    <Content Include="Fronts\images\sport\36.jpg" />
+    <Content Include="Fronts\images\sport\37.jpg" />
+    <Content Include="Fronts\images\tech\team-1.jpg" />
+    <Content Include="Fronts\images\tech\team-2.jpg" />
+    <Content Include="Fronts\images\tech\team-3.jpg" />
+    <Content Include="Fronts\images\tech\team-4.jpg" />
+    <Content Include="Fronts\images\videos\02.jpg" />
+    <Content Include="Fronts\images\videos\1.png" />
+    <Content Include="Fronts\images\videos\3.jpg" />
+    <Content Include="Fronts\images\videos\4.jpg" />
+    <Content Include="Fronts\images\world\1.jpg" />
+    <Content Include="Fronts\images\world\10.jpeg" />
+    <Content Include="Fronts\images\world\11.jpeg" />
+    <Content Include="Fronts\images\world\12.jpeg" />
+    <Content Include="Fronts\images\world\13.jpeg" />
+    <Content Include="Fronts\images\world\14.jpg" />
+    <Content Include="Fronts\images\world\15.jpg" />
+    <Content Include="Fronts\images\world\16.jpg" />
+    <Content Include="Fronts\images\world\17.jpg" />
+    <Content Include="Fronts\images\world\18.jpg" />
+    <Content Include="Fronts\images\world\19.jpg" />
+    <Content Include="Fronts\images\world\2.jpg" />
+    <Content Include="Fronts\images\world\20.jpg" />
+    <Content Include="Fronts\images\world\21.jpg" />
+    <Content Include="Fronts\images\world\22.jpg" />
+    <Content Include="Fronts\images\world\23.jpg" />
+    <Content Include="Fronts\images\world\24.jpg" />
+    <Content Include="Fronts\images\world\25.jpeg" />
+    <Content Include="Fronts\images\world\26.jpeg" />
+    <Content Include="Fronts\images\world\27.jpeg" />
+    <Content Include="Fronts\images\world\28.jpeg" />
+    <Content Include="Fronts\images\world\29.jpeg" />
+    <Content Include="Fronts\images\world\3.jpg" />
+    <Content Include="Fronts\images\world\30.jpeg" />
+    <Content Include="Fronts\images\world\31.jpeg" />
+    <Content Include="Fronts\images\world\32.jpeg" />
+    <Content Include="Fronts\images\world\33.jpeg" />
+    <Content Include="Fronts\images\world\34.jpeg" />
+    <Content Include="Fronts\images\world\35.jpeg" />
+    <Content Include="Fronts\images\world\36.jpeg" />
+    <Content Include="Fronts\images\world\4.jpg" />
+    <Content Include="Fronts\images\world\5.jpg" />
+    <Content Include="Fronts\images\world\6.jpg" />
+    <Content Include="Fronts\images\world\7.jpg" />
+    <Content Include="Fronts\images\world\8.jpg" />
+    <Content Include="Fronts\images\world\9.jpeg" />
+    <Content Include="Fronts\index-2.html" />
+    <Content Include="Fronts\js\index.js" />
+    <Content Include="Fronts\js\jquery.min.js" />
+    <Content Include="Fronts\js\jquery.slicknav.min.js" />
+    <Content Include="Fronts\js\script.js" />
+    <Content Include="Fronts\js\superfish.min.js" />
+    <Content Include="Fronts\magasin.html" />
+    <Content Include="Fronts\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="Fronts\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="Fronts\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="Fronts\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="Fronts\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="Fronts\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="Fronts\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="Fronts\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="Fronts\owlcarousel\js\owl.carousel.min.js" />
+    <Content Include="Fronts\Pages\page_criminal\post1.html" />
+    <Content Include="Fronts\Pages\page_criminal\post10.html" />
+    <Content Include="Fronts\Pages\page_criminal\post11.html" />
+    <Content Include="Fronts\Pages\page_criminal\post12.html" />
+    <Content Include="Fronts\Pages\page_criminal\post13.html" />
+    <Content Include="Fronts\Pages\page_criminal\post14.html" />
+    <Content Include="Fronts\Pages\page_criminal\post15.html" />
+    <Content Include="Fronts\Pages\page_criminal\post16.html" />
+    <Content Include="Fronts\Pages\page_criminal\post17.html" />
+    <Content Include="Fronts\Pages\page_criminal\post18.html" />
+    <Content Include="Fronts\Pages\page_criminal\post19.html" />
+    <Content Include="Fronts\Pages\page_criminal\post2.html" />
+    <Content Include="Fronts\Pages\page_criminal\post20.html" />
+    <Content Include="Fronts\Pages\page_criminal\post21.html" />
+    <Content Include="Fronts\Pages\page_criminal\post22.html" />
+    <Content Include="Fronts\Pages\page_criminal\post23.html" />
+    <Content Include="Fronts\Pages\page_criminal\post24.html" />
+    <Content Include="Fronts\Pages\page_criminal\post25.html" />
+    <Content Include="Fronts\Pages\page_criminal\post26.html" />
+    <Content Include="Fronts\Pages\page_criminal\post27.html" />
+    <Content Include="Fronts\Pages\page_criminal\post28.html" />
+    <Content Include="Fronts\Pages\page_criminal\post29.html" />
+    <Content Include="Fronts\Pages\page_criminal\post3.html" />
+    <Content Include="Fronts\Pages\page_criminal\post30.html" />
+    <Content Include="Fronts\Pages\page_criminal\post31.html" />
+    <Content Include="Fronts\Pages\page_criminal\post32.html" />
+    <Content Include="Fronts\Pages\page_criminal\post33.html" />
+    <Content Include="Fronts\Pages\page_criminal\post34.html" />
+    <Content Include="Fronts\Pages\page_criminal\post35.html" />
+    <Content Include="Fronts\Pages\page_criminal\post36.html" />
+    <Content Include="Fronts\Pages\page_criminal\post37.html" />
+    <Content Include="Fronts\Pages\page_criminal\post38.html" />
+    <Content Include="Fronts\Pages\page_criminal\post39.html" />
+    <Content Include="Fronts\Pages\page_criminal\post4.html" />
+    <Content Include="Fronts\Pages\page_criminal\post40.html" />
+    <Content Include="Fronts\Pages\page_criminal\post41.html" />
+    <Content Include="Fronts\Pages\page_criminal\post42.html" />
+    <Content Include="Fronts\Pages\page_criminal\post43.html" />
+    <Content Include="Fronts\Pages\page_criminal\post44.html" />
+    <Content Include="Fronts\Pages\page_criminal\post45.html" />
+    <Content Include="Fronts\Pages\page_criminal\post46.html" />
+    <Content Include="Fronts\Pages\page_criminal\post47.html" />
+    <Content Include="Fronts\Pages\page_criminal\post48.html" />
+    <Content Include="Fronts\Pages\page_criminal\post49.html" />
+    <Content Include="Fronts\Pages\page_criminal\post5.html" />
+    <Content Include="Fronts\Pages\page_criminal\post50.html" />
+    <Content Include="Fronts\Pages\page_criminal\post51.html" />
+    <Content Include="Fronts\Pages\page_criminal\post6.html" />
+    <Content Include="Fronts\Pages\page_criminal\post7.html" />
+    <Content Include="Fronts\Pages\page_criminal\post8.html" />
+    <Content Include="Fronts\Pages\page_criminal\post9.html" />
+    <Content Include="Fronts\Pages\page_econmy\post.html" />
+    <Content Include="Fronts\Pages\page_econmy\post10.html" />
+    <Content Include="Fronts\Pages\page_econmy\post11.html" />
+    <Content Include="Fronts\Pages\page_econmy\post12.html" />
+    <Content Include="Fronts\Pages\page_econmy\post13.html" />
+    <Content Include="Fronts\Pages\page_econmy\post14.html" />
+    <Content Include="Fronts\Pages\page_econmy\post15.html" />
+    <Content Include="Fronts\Pages\page_econmy\post16.html" />
+    <Content Include="Fronts\Pages\page_econmy\post17.html" />
+    <Content Include="Fronts\Pages\page_econmy\post18.html" />
+    <Content Include="Fronts\Pages\page_econmy\post19.html" />
+    <Content Include="Fronts\Pages\page_econmy\post2.html" />
+    <Content Include="Fronts\Pages\page_econmy\post20.html" />
+    <Content Include="Fronts\Pages\page_econmy\post21.html" />
+    <Content Include="Fronts\Pages\page_econmy\post22.html" />
+    <Content Include="Fronts\Pages\page_econmy\post23.html" />
+    <Content Include="Fronts\Pages\page_econmy\post24.html" />
+    <Content Include="Fronts\Pages\page_econmy\post25.html" />
+    <Content Include="Fronts\Pages\page_econmy\post26.html" />
+    <Content Include="Fronts\Pages\page_econmy\post27.html" />
+    <Content Include="Fronts\Pages\page_econmy\post28.html" />
+    <Content Include="Fronts\Pages\page_econmy\post29.html" />
+    <Content Include="Fronts\Pages\page_econmy\post3.html" />
+    <Content Include="Fronts\Pages\page_econmy\post30.html" />
+    <Content Include="Fronts\Pages\page_econmy\post31.html" />
+    <Content Include="Fronts\Pages\page_econmy\post33.html" />
+    <Content Include="Fronts\Pages\page_econmy\post4.html" />
+    <Content Include="Fronts\Pages\page_econmy\post5.html" />
+    <Content Include="Fronts\Pages\page_econmy\post6.html" />
+    <Content Include="Fronts\Pages\page_econmy\post7.html" />
+    <Content Include="Fronts\Pages\page_econmy\post8.html" />
+    <Content Include="Fronts\Pages\page_econmy\post9.html" />
+    <Content Include="Fronts\Pages\page_healthy\post1.html" />
+    <Content Include="Fronts\Pages\page_healthy\post10.html" />
+    <Content Include="Fronts\Pages\page_healthy\post11.html" />
+    <Content Include="Fronts\Pages\page_healthy\post12.html" />
+    <Content Include="Fronts\Pages\page_healthy\post13.html" />
+    <Content Include="Fronts\Pages\page_healthy\post14.html" />
+    <Content Include="Fronts\Pages\page_healthy\post15.html" />
+    <Content Include="Fronts\Pages\page_healthy\post16.html" />
+    <Content Include="Fronts\Pages\page_healthy\post17.html" />
+    <Content Include="Fronts\Pages\page_healthy\post18.html" />
+    <Content Include="Fronts\Pages\page_healthy\post19.html" />
+    <Content Include="Fronts\Pages\page_healthy\post2.html" />
+    <Content Include="Fronts\Pages\page_healthy\post20.html" />
+    <Content Include="Fronts\Pages\page_healthy\post21.html" />
+    <Content Include="Fronts\Pages\page_healthy\post22.html" />
+    <Content Include="Fronts\Pages\page_healthy\post23.html" />
+    <Content Include="Fronts\Pages\page_healthy\post24.html" />
+    <Content Include="Fronts\Pages\page_healthy\post25.html" />
+    <Content Include="Fronts\Pages\page_healthy\post26.html" />
+    <Content Include="Fronts\Pages\page_healthy\post27.html" />
+    <Content Include="Fronts\Pages\page_healthy\post28.html" />
+    <Content Include="Fronts\Pages\page_healthy\post29.html" />
+    <Content Include="Fronts\Pages\page_healthy\post3.html" />
+    <Content Include="Fronts\Pages\page_healthy\post4.html" />
+    <Content Include="Fronts\Pages\page_healthy\post5.html" />
+    <Content Include="Fronts\Pages\page_healthy\post6.html" />
+    <Content Include="Fronts\Pages\page_healthy\post7.html" />
+    <Content Include="Fronts\Pages\page_healthy\post8.html" />
+    <Content Include="Fronts\Pages\page_healthy\post9.html" />
+    <Content Include="Fronts\Pages\page_magasin\post1.html" />
+    <Content Include="Fronts\Pages\page_magasin\post10.html" />
+    <Content Include="Fronts\Pages\page_magasin\post11.html" />
+    <Content Include="Fronts\Pages\page_magasin\post12.html" />
+    <Content Include="Fronts\Pages\page_magasin\post13.html" />
+    <Content Include="Fronts\Pages\page_magasin\post14.html" />
+    <Content Include="Fronts\Pages\page_magasin\post15.html" />
+    <Content Include="Fronts\Pages\page_magasin\post16.html" />
+    <Content Include="Fronts\Pages\page_magasin\post17.html" />
+    <Content Include="Fronts\Pages\page_magasin\post18.html" />
+    <Content Include="Fronts\Pages\page_magasin\post19.html" />
+    <Content Include="Fronts\Pages\page_magasin\post2.html" />
+    <Content Include="Fronts\Pages\page_magasin\post20.html" />
+    <Content Include="Fronts\Pages\page_magasin\post21.html" />
+    <Content Include="Fronts\Pages\page_magasin\post22.html" />
+    <Content Include="Fronts\Pages\page_magasin\post23.html" />
+    <Content Include="Fronts\Pages\page_magasin\post24.html" />
+    <Content Include="Fronts\Pages\page_magasin\post25.html" />
+    <Content Include="Fronts\Pages\page_magasin\post26.html" />
+    <Content Include="Fronts\Pages\page_magasin\post27.html" />
+    <Content Include="Fronts\Pages\page_magasin\post28.html" />
+    <Content Include="Fronts\Pages\page_magasin\post29.html" />
+    <Content Include="Fronts\Pages\page_magasin\post3.html" />
+    <Content Include="Fronts\Pages\page_magasin\post30.html" />
+    <Content Include="Fronts\Pages\page_magasin\post31.html" />
+    <Content Include="Fronts\Pages\page_magasin\post32.html" />
+    <Content Include="Fronts\Pages\page_magasin\post33.html" />
+    <Content Include="Fronts\Pages\page_magasin\post34.html" />
+    <Content Include="Fronts\Pages\page_magasin\post35.html" />
+    <Content Include="Fronts\Pages\page_magasin\post36.html" />
+    <Content Include="Fronts\Pages\page_magasin\post37.html" />
+    <Content Include="Fronts\Pages\page_magasin\post38.html" />
+    <Content Include="Fronts\Pages\page_magasin\post39.html" />
+    <Content Include="Fronts\Pages\page_magasin\post4.html" />
+    <Content Include="Fronts\Pages\page_magasin\post40.html" />
+    <Content Include="Fronts\Pages\page_magasin\post41.html" />
+    <Content Include="Fronts\Pages\page_magasin\post42.html" />
+    <Content Include="Fronts\Pages\page_magasin\post43.html" />
+    <Content Include="Fronts\Pages\page_magasin\post5.html" />
+    <Content Include="Fronts\Pages\page_magasin\post6.html" />
+    <Content Include="Fronts\Pages\page_magasin\post7.html" />
+    <Content Include="Fronts\Pages\page_magasin\post8.html" />
+    <Content Include="Fronts\Pages\page_magasin\post9.html" />
+    <Content Include="Fronts\Pages\page_social\post1.html" />
+    <Content Include="Fronts\Pages\page_social\post10.html" />
+    <Content Include="Fronts\Pages\page_social\post11.html" />
+    <Content Include="Fronts\Pages\page_social\post12.html" />
+    <Content Include="Fronts\Pages\page_social\post13.html" />
+    <Content Include="Fronts\Pages\page_social\post14.html" />
+    <Content Include="Fronts\Pages\page_social\post15.html" />
+    <Content Include="Fronts\Pages\page_social\post16.html" />
+    <Content Include="Fronts\Pages\page_social\post17.html" />
+    <Content Include="Fronts\Pages\page_social\post18.html" />
+    <Content Include="Fronts\Pages\page_social\post19.html" />
+    <Content Include="Fronts\Pages\page_social\post2.html" />
+    <Content Include="Fronts\Pages\page_social\post20.html" />
+    <Content Include="Fronts\Pages\page_social\post21.html" />
+    <Content Include="Fronts\Pages\page_social\post22.html" />
+    <Content Include="Fronts\Pages\page_social\post23.html" />
+    <Content Include="Fronts\Pages\page_social\post24.html" />
+    <Content Include="Fronts\Pages\page_social\post25.html" />
+    <Content Include="Fronts\Pages\page_social\post26.html" />
+    <Content Include="Fronts\Pages\page_social\post27.html" />
+    <Content Include="Fronts\Pages\page_social\post28.html" />
+    <Content Include="Fronts\Pages\page_social\post29.html" />
+    <Content Include="Fronts\Pages\page_social\post3.html" />
+    <Content Include="Fronts\Pages\page_social\post30.html" />
+    <Content Include="Fronts\Pages\page_social\post31.html" />
+    <Content Include="Fronts\Pages\page_social\post32.html" />
+    <Content Include="Fronts\Pages\page_social\post33.html" />
+    <Content Include="Fronts\Pages\page_social\post34.html" />
+    <Content Include="Fronts\Pages\page_social\post35.html" />
+    <Content Include="Fronts\Pages\page_social\post36.html" />
+    <Content Include="Fronts\Pages\page_social\post37.html" />
+    <Content Include="Fronts\Pages\page_social\post38.html" />
+    <Content Include="Fronts\Pages\page_social\post39.html" />
+    <Content Include="Fronts\Pages\page_social\post4.html" />
+    <Content Include="Fronts\Pages\page_social\post40.html" />
+    <Content Include="Fronts\Pages\page_social\post41.html" />
+    <Content Include="Fronts\Pages\page_social\post42.html" />
+    <Content Include="Fronts\Pages\page_social\post43.html" />
+    <Content Include="Fronts\Pages\page_social\post44.html" />
+    <Content Include="Fronts\Pages\page_social\post45.html" />
+    <Content Include="Fronts\Pages\page_social\post46.html" />
+    <Content Include="Fronts\Pages\page_social\post47.html" />
+    <Content Include="Fronts\Pages\page_social\post48.html" />
+    <Content Include="Fronts\Pages\page_social\post49.html" />
+    <Content Include="Fronts\Pages\page_social\post5.html" />
+    <Content Include="Fronts\Pages\page_social\post50.html" />
+    <Content Include="Fronts\Pages\page_social\post51.html" />
+    <Content Include="Fronts\Pages\page_social\post52.html" />
+    <Content Include="Fronts\Pages\page_social\post53.html" />
+    <Content Include="Fronts\Pages\page_social\post54.html" />
+    <Content Include="Fronts\Pages\page_social\post55.html" />
+    <Content Include="Fronts\Pages\page_social\post56.html" />
+    <Content Include="Fronts\Pages\page_social\post57.html" />
+    <Content Include="Fronts\Pages\page_social\post59.html" />
+    <Content Include="Fronts\Pages\page_social\post6.html" />
+    <Content Include="Fronts\Pages\page_social\post60.html" />
+    <Content Include="Fronts\Pages\page_social\post61.html" />
+    <Content Include="Fronts\Pages\page_social\post62.html" />
+    <Content Include="Fronts\Pages\page_social\post63.html" />
+    <Content Include="Fronts\Pages\page_social\post64.html" />
+    <Content Include="Fronts\Pages\page_social\post65.html" />
+    <Content Include="Fronts\Pages\page_social\post7.html" />
+    <Content Include="Fronts\Pages\page_social\post8.html" />
+    <Content Include="Fronts\Pages\page_social\post9.html" />
+    <Content Include="Fronts\Pages\page_sport\post1.html" />
+    <Content Include="Fronts\Pages\page_sport\post10.html" />
+    <Content Include="Fronts\Pages\page_sport\post11.html" />
+    <Content Include="Fronts\Pages\page_sport\post12.html" />
+    <Content Include="Fronts\Pages\page_sport\post13.html" />
+    <Content Include="Fronts\Pages\page_sport\post14.html" />
+    <Content Include="Fronts\Pages\page_sport\post15.html" />
+    <Content Include="Fronts\Pages\page_sport\post16.html" />
+    <Content Include="Fronts\Pages\page_sport\post17.html" />
+    <Content Include="Fronts\Pages\page_sport\post18.html" />
+    <Content Include="Fronts\Pages\page_sport\post19.html" />
+    <Content Include="Fronts\Pages\page_sport\post2.html" />
+    <Content Include="Fronts\Pages\page_sport\post20.html" />
+    <Content Include="Fronts\Pages\page_sport\post21.html" />
+    <Content Include="Fronts\Pages\page_sport\post22.html" />
+    <Content Include="Fronts\Pages\page_sport\post23.html" />
+    <Content Include="Fronts\Pages\page_sport\post24.html" />
+    <Content Include="Fronts\Pages\page_sport\post25.html" />
+    <Content Include="Fronts\Pages\page_sport\post26.html" />
+    <Content Include="Fronts\Pages\page_sport\post27.html" />
+    <Content Include="Fronts\Pages\page_sport\post28.html" />
+    <Content Include="Fronts\Pages\page_sport\post29.html" />
+    <Content Include="Fronts\Pages\page_sport\post3.html" />
+    <Content Include="Fronts\Pages\page_sport\post30.html" />
+    <Content Include="Fronts\Pages\page_sport\post31.html" />
+    <Content Include="Fronts\Pages\page_sport\post32.html" />
+    <Content Include="Fronts\Pages\page_sport\post33.html" />
+    <Content Include="Fronts\Pages\page_sport\post34.html" />
+    <Content Include="Fronts\Pages\page_sport\post4.html" />
+    <Content Include="Fronts\Pages\page_sport\post5.html" />
+    <Content Include="Fronts\Pages\page_sport\post6.html" />
+    <Content Include="Fronts\Pages\page_sport\post7.html" />
+    <Content Include="Fronts\Pages\page_sport\post8.html" />
+    <Content Include="Fronts\Pages\page_sport\post9.html" />
+    <Content Include="Fronts\Pages\page_world\post1.html" />
+    <Content Include="Fronts\Pages\page_world\post10.html" />
+    <Content Include="Fronts\Pages\page_world\post11.html" />
+    <Content Include="Fronts\Pages\page_world\post12.html" />
+    <Content Include="Fronts\Pages\page_world\post13.html" />
+    <Content Include="Fronts\Pages\page_world\post14.html" />
+    <Content Include="Fronts\Pages\page_world\post15.html" />
+    <Content Include="Fronts\Pages\page_world\post16.html" />
+    <Content Include="Fronts\Pages\page_world\post17.html" />
+    <Content Include="Fronts\Pages\page_world\post18.html" />
+    <Content Include="Fronts\Pages\page_world\post19.html" />
+    <Content Include="Fronts\Pages\page_world\post2.html" />
+    <Content Include="Fronts\Pages\page_world\post20.html" />
+    <Content Include="Fronts\Pages\page_world\post21.html" />
+    <Content Include="Fronts\Pages\page_world\post22.html" />
+    <Content Include="Fronts\Pages\page_world\post23.html" />
+    <Content Include="Fronts\Pages\page_world\post24.html" />
+    <Content Include="Fronts\Pages\page_world\post25.html" />
+    <Content Include="Fronts\Pages\page_world\post26.html" />
+    <Content Include="Fronts\Pages\page_world\post27.html" />
+    <Content Include="Fronts\Pages\page_world\post28.html" />
+    <Content Include="Fronts\Pages\page_world\post29.html" />
+    <Content Include="Fronts\Pages\page_world\post3.html" />
+    <Content Include="Fronts\Pages\page_world\post30.html" />
+    <Content Include="Fronts\Pages\page_world\post31.html" />
+    <Content Include="Fronts\Pages\page_world\post32.html" />
+    <Content Include="Fronts\Pages\page_world\post33.html" />
+    <Content Include="Fronts\Pages\page_world\post34.html" />
+    <Content Include="Fronts\Pages\page_world\post35.html" />
+    <Content Include="Fronts\Pages\page_world\post36.html" />
+    <Content Include="Fronts\Pages\page_world\post4.html" />
+    <Content Include="Fronts\Pages\page_world\post5.html" />
+    <Content Include="Fronts\Pages\page_world\post6.html" />
+    <Content Include="Fronts\Pages\page_world\post7.html" />
+    <Content Include="Fronts\Pages\page_world\post8.html" />
+    <Content Include="Fronts\Pages\page_world\post9.html" />
+    <Content Include="Fronts\privacy.html" />
+    <Content Include="Fronts\SiteMap.png" />
+    <Content Include="Fronts\social.html" />
+    <Content Include="Fronts\sport.html" />
+    <Content Include="Fronts\tech.html" />
+    <Content Include="Fronts\terms.html" />
+    <Content Include="Fronts\video\01.mp4" />
+    <Content Include="Fronts\video\02.mp4" />
+    <Content Include="Fronts\video\03.mp4" />
+    <Content Include="Fronts\video\04.mp4" />
+    <Content Include="Fronts\world.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Assets\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Assets\vendor\font-awesome\less\animated.less" />
+    <Content Include="Assets\vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Assets\vendor\font-awesome\less\core.less" />
+    <Content Include="Assets\vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="Assets\vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="Assets\vendor\font-awesome\less\icons.less" />
+    <Content Include="Assets\vendor\font-awesome\less\larger.less" />
+    <Content Include="Assets\vendor\font-awesome\less\list.less" />
+    <Content Include="Assets\vendor\font-awesome\less\mixins.less" />
+    <Content Include="Assets\vendor\font-awesome\less\path.less" />
+    <Content Include="Assets\vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Assets\vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="Assets\vendor\font-awesome\less\stacked.less" />
+    <Content Include="Assets\vendor\font-awesome\less\variables.less" />
+    <Content Include="Assets\vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_core.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_list.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_path.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="Assets\vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="Areas\Admin\Views\Shared\adm.cshtml" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Views\Users\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\User_category\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\User_category\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\User_category\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\User_category\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\User_category\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\News\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\News\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\News\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\News\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\News\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\News_category\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\News_category\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\News_category\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\News_category\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\News_category\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\News_subcategory\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\News_subcategory\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\News_subcategory\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\News_subcategory\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\News_subcategory\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\User_comment\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\User_comment\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\User_comment\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\User_comment\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\User_comment\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\News_images\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\News_images\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\News_images\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\News_images\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\News_images\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\News_videos\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\News_videos\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\News_videos\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\News_videos\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\News_videos\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Subscribers\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Subscribers\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Subscribers\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Subscribers\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Subscribers\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Mesages\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Mesages\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Mesages\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Mesages\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Mesages\Index.cshtml" />
+    <Content Include="Areas\Users\Views\web.config" />
+    <Content Include="Fronts\asset\css\style.css.map" />
+    <Content Include="Fronts\asset\sass\style.scss" />
+    <Content Include="Fronts\fonts\fontawesome-webfont5b62.eot" />
+    <Content Include="Fronts\fonts\fontawesome-webfont5b62.ttf" />
+    <Content Include="Fronts\fonts\fontawesome-webfont5b62.woff" />
+    <Content Include="Fronts\fonts\fontawesome-webfont5b62.woff2" />
+    <Content Include="Fronts\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Fronts\fonts\FryPro.otf" />
+    <Content Include="Fronts\_config.yml" />
+    <Content Include="Areas\Users\Views\Shared\homes1.cshtml" />
+    <Content Include="Areas\Users\Views\FirstPage\MainPage.cshtml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index1.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Users\Models\" />
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57229</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57229/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

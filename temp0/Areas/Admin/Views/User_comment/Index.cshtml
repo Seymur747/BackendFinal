@@ -1,0 +1,52 @@
+﻿@model IEnumerable<temp0.Models.User_comment>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/adm.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.texts)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.add_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.News.longText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Users.names)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.texts)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.add_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.News.longText)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Users.names)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

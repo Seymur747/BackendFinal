@@ -1,0 +1,611 @@
+<!Doctype html>
+<html lang="En">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="News,Information">
+    <meta name="author" content="Firuze Rustemli">
+    <title>News</title>
+    <!-- Css -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,700,700i,900" rel="stylesheet">
+    <link href="asset/css/responsive.css" rel="stylesheet">
+    <link href="asset/css/animation.css" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <link href="asset/css/design.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/slicknav.css">
+    <link rel="stylesheet" href="asset/css/superfish.css">
+    <!-- SIDE -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- =============HEADER==================== -->
+        <header class="header margin-bottom-30">
+            <!-- =================BREAKING================ -->
+            <div class="bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8 hidden-xs">
+                            <div class="breaking">
+                                <span>Qaynar Xəbərlər:</span>
+                                <p class='heading'>
+                                    <span id='dynamicText'></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="pull-right options">
+                                <a href="#" class="subscribe">Abunə ol</a>
+                                <span>|</span>
+                                <a href="#" class="login">Qeydiyyat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =============WATCHER============= -->
+            <div class="clearfix"> </div>
+            <div class="watcher padding-vertical-10">
+                <div clsas="main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 logo">
+                                <a href="index-2.html"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <div class="col-md-9 col-sm-9 nav-wrapper">
+                                <nav>
+                                    <ul class="sf-menu" id="menu">
+                                        <li><a href="Index-2.html" class="green">Baş səhİfə <i class="fa fa-angle-down"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kateqorİya<i class="fa fa-angle-down"></i></a>
+                                            <ul class="animate">
+                                                <li><a href="economy.html">İqtisadiyyat</a></li>
+                                                <li>
+                                                    <a href="entertaintment.html">Maraqlı <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                                    <ul class="animate drop">
+                                                        <li><a href="magasin.html">Şou</a></li>
+                                                        <li><a href="food_health.html">Sağlamlıq </a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="sport.html">İdman</a></li>
+                                                <li><a href="social.html">Sosial</a></li>
+                                                <li><a href="world.html">Dünya</a></li>
+                                                <li><a href="criminal.html">Kriminal</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="tech.html">Komanda <i class="fa fa-angle-down"></i></a>
+                                        </li>
+                                        <li><a href="contact.html">Əlaqə</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===============MENU=============== -->
+            <div class="clearfix"> </div>
+        </header>
+        <!-- ===============.=======CONTENT================ -->
+        <div class="container margin-top-30">
+            <div class="row">
+                <!--======================PATH=========================-->
+                <div id="breadcrumbs" class="stuck_position margin-bottom-30">
+                    <div class="container">
+                        <div class="row">
+                            <div class="moduletable   col-sm-12">
+                                <div class="module_container">
+                                    <ul class="breadcrumb">
+                                        <li><a href="index-2.html" class="pathway">Baş səhifə</a></li>
+                                        <li><a href="index-2.html" class="pathway">Kateqoriya</a></li>
+                                        <li><a href="index-2.html" class="pathway">Maraqlı</a></li>
+                                        <li class="active"><span>Şou</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-8  fadeIn animated" style="visibility: visible;">
+                    <!--==================LAYOUT-1=================-->
+                    <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_1--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <a href="Pages/page_magasin/post1.html">
+                                        <span class="badge text-uppercase badge-overlay badge-entertainment">yeni</span>
+                                        <div class="overlay  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <img src="images/magasin/01.jpg" class="img-responsive" alt="">
+                                        <div class="layout-detail padding-25  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <h4>Cennifer Lopez 87 yaşlı milyarderlə</h4>
+                                            <p>48 yaşlı müğənni Cennifer Lopez və 42 yaşlı sevgilisi Aleks Rodriqes amerikalı milyarder Uorren Baffetti ziyarət ediblər...</p>
+                                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 27, 2016</span></div>
+                                        </div>
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_1--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <a href="Pages/page_magasin/post2.html">
+                                            <span class="badge text-uppercase badge-overlay badge-entertainment">yeni</span>
+                                            <div class="overlay  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                            <img src="images/magasin/02.jpg" class="img-responsive" alt="">
+                                            <div class="layout-detail padding-25  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                                <h4>Nazpəri Dostəliyevanın evində oğurluq</h4>
+                                                <p>Xalq artisti, müğənni Nazpəri Dostəliyevanın evindən seyf oğurlamış şəxslərdən daha biri həbs olunub...</p>
+                                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 27, 2016</span><span class="comments">3</span></div>
+                                            </div>
+                                        </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--=================LAYOUT-2===================-->
+                    <h3 class="heading-1 margin-top-30"><span>Latest News</span></h3>
+                    <div class="row margin-bottom-40  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_magasin/post3.html"><img src="images/magasin/03.jpg" class="img-responsive" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <h4><a href="Pages/page_magasin/post3.html">Tanınmış aktyor xəstəxanalıq oldu</a></h4>
+                                <p>“Beni böyle sev” serialının aktyoru Güven Kıraç 5 gündür ki, xəstəxanadadı<r class=""></r>
+                                </p>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Rana F.</span><span class="date">Sep. 28, 2016</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--=================LAYOUT-3===================-->
+                    <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+
+                        <div class="col-md-6 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_2--item row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <a href="Pages/page_magasin/post4.html"><img src="images/magasin/04.jpg" class="img-responsive" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <h4><a href="Pages/page_magasin/post4.html">"Uşaqlarımın üçünü övladlığa götürmüşəm"</a></h4>
+                                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+
+                            <hr class="l2">
+
+                            <div class="layout_2--item row margin-bottom-30  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <a href="Pages/page_magasin/post5.html"><img src="images/magasin/05.jpeg" class="img-responsive" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <h4><a href="Pages/page_magasin/post5.html">Qətlə yetirilən tanınmış aktyor bu gün dəfn ediləcək</a></h4>
+                                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_2--item row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <a href="Pages/page_magasin/post6.html"><img src="images/magasin/06.jpg" class="img-responsive" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <h4><a href="Pages/page_magasin/post6.html">"Beşiktaş"ın prezidentinin azərbaycanlı sevgilisi kimdir?</a></h4>
+                                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+
+                            <hr class="l2">
+
+                            <div class="layout_2--item row margin-bottom-30  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <a href="Pages/page_magasin/post7.html"><img src="images/magasin/07.jpg" class="img-responsive" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <h4><a href="Pages/page_magasin/post7.html">Xərçəng xəstəsi olan Rafiq Hüseynov iki gündə iki dəfə əməliyyat olunacaq</a></h4>
+                                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--=================LAYOUT-5===================-->
+                    <h3 class="heading-1 margin-top-30"><span>You may also like</span></h3>
+                    <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                    <a href="Pages/page_magasin/post8.html"><img src="images/magasin/08.jpeg" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post8.html">Röya villasının alınmasından danışdı </a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Katie F.</span><span class="date">Sep. 25, 2016</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_magasin/post9.html"><img src="images/magasin/10.jpg" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post9.html">“Eurovision-2018”-nin tarixi və keçiriləcəyi şəhər bəlli oldu</a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 24, 2016</span></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_magasin/post10.html"><img src="images/magasin/010.jpg" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post10.html">Timati bu sevgilisindən də ayrıldı?</a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Brandon B.</span><span class="date">Sep. 23, 2016</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--=================LAYOUT-6===================-->
+                    <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_magasin/post11.html"><img src="images/magasin/11.jpg" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post11.html">Xalq artisti ingilis əri ilə istirahətdə</a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 22, 2016</span><span class="comments">2</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                    <a href="Pages/page_magasin/post12.html"><img src="images/magasin/12.png" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post12.html">Natavandan gəlinliyini tənqid edənlərə CAVAB</a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Brandon B.</span><span class="date">Sep. 20, 2016</span></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                    <a href="Pages/page_magasin/post13.html"><img src="images/magasin/13.jpg" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post13.html">Məşhur türkiyəli müğənni Şəmkirə toya gəlib</a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Brandon B.</span><span class="date">Sep. 20, 2016</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <aside class="col-md-4 col-sm-4">
+                  
+                    <!--====================LAYOUT-ASIDE-2======================-->
+                    <div class="side-widget margin-bottom-50  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <h3 class="heading-1"><span>Məşhur xəbərlər</span></h3>
+                        <ul class="side-posts">
+                            <li><span>25.08</span> <a href="Pages/page_magasin/post14.html">Məşhur müğənni intihar etdi</a></li>
+                            <li><span>23.08</span> <a href="Pages/page_magasin/post15.html">Castin bu evə ayda 200 min verir</a></li>
+                            <li><span>22.08</span> <a href="Pages/page_magasin/post16.html">Aparıcı "AA" nömrəli "Gelandewagen" sürür </a></li>
+                            <li><span>21.08</span> <a href="Pages/page_magasin/post17.html">Natavan toyunda 3 gəlinlik dəyişdi</a></li>
+                            <li><span>20.08</span> <a href="Pages/page_magasin/post18.html">Şəbnəmin qəza xəbəri yalan çıxdı</a></li>
+                            <li><span>19.08</span> <a href="Pages/page_magasin/post19.html">Türkiyəli müğənninin toyu təxirə düşdü</a></li>
+                            <li><span>18.08</span> <a href="Pages/page_magasin/post20.html">Həbsdən çıxan müğənninin toyu təxirə düşdü</a></li>
+                            <li><span>25.08</span> <a href="Pages/page_magasin/post21.html">İlqar Mikayıloğlunu su ilanı "sancıb"mış</a></li>
+                            <li><span>23.08</span> <a href="Pages/page_magasin/post22.html">"Allah hamıya mənim ərim kimi kişi qismət etsin"</a></li>
+                            <li><span>22.08</span> <a href="Pages/page_magasin/post23.html">Türkay Şoray gizlicə əməliyyat oldu</a></li>
+                            <li><span>22.08</span> <a href="Pages/page_magasin/post24.html">Mustafa Ceceli ikinci dəfə bu xanımla evləndi</a></li>
+                            <li><span>17.08</span> <a href="Pages/page_magasin/post25.html">Kral ailəsinə daha bir gəlin gəlir</a></li>
+                            <li><span>16.08</span> <a href="Pages/page_magasin/post26.html">Müğənninin ailəsində faciə: 5 yaşlı qızı öldü</a></li>
+                            <li><span>15.08</span> <a href="Pages/page_magasin/post27.html">Emma boşanma xəbərinə belə cavab verdi </a></li>
+                        </ul>
+                    </div>
+                    <!--====================LAYOUT-ASIDE_3-======================-->
+                    <div class="ads ad-300 margin-bottom-60  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <h3 class="heading-1"><span>Advertsment</span></h3>
+                        <img src="images/Add/300x250.jpg" class="img-responsive" alt="">
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <!--=================LAYOUT-4===================-->
+        <!-- ===============.=======Slider-3================ -->
+        <div id="owl-two" class="owl-carousel owl-theme">
+            <a href="Pages/page_magasin/post29.html">
+            <div class="item" style="height: 258px;">
+                <img src="images/magasin/29.jpg" class="img-responsive" alt="" style="height: 100%;">
+                <div class="layout-detail padding-25  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="icon-32 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                    <h4>Adriana Lima Türkiyəni tərk edir</h4>
+                    <p>Braziliyalı model Adriana Lima ilə türk yazar sevgilisi Metin Haranın Bodrum tətili başa çatıb.</p>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 27, 2016</span><span class="comments">3</span></div>
+                </div>
+            </div>
+            </a>
+            <a href="Pages/page_magasin/post30.html">
+            <div class="item"  style="height: 258px;">
+                <img src="images/magasin/30.jpg" class="img-responsive" alt="" style="height: 100%;">
+                <div class="layout-detail padding-25  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="icon-32 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                    <h4>"Benzin yaxşı olub bahalaşıb"</h4>
+                    <p>Əməkdar artist Elza Seyidcahan dünən onun adından şeir paylaşanlara əsəbiləşib...</p>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 27, 2016</span><span class="comments">3</span></div>
+                </div>
+            </div>
+            </a>
+            <a href="Pages/page_magasin/post31.html">
+            <div class="item" style="height: 258px;">
+                <img src="images/magasin/31.png" class="img-responsive" alt="" style="height: 100%;">
+                <div class="layout-detail padding-25  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="icon-32 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                    <h4>"Vicdan Haqqı"nın aktyoru əməliyyat olundu</h4>
+                    <p>Akademik Milli Dram Teatrının aktyoru, əməkdar artist İlham Hüseynov əməliyyat olunub..</p>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 27, 2016</span><span class="comments">3</span></div>
+                </div>
+            </div>
+            </a>
+            <a href="Pages/page_magasin/post32.html">
+            <div class="item" style="height: 258px;">
+                <img src="images/magasin/32.jpg" class="img-responsive" alt="" style="height: 100%;">
+                <div class="layout-detail padding-25  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="icon-32 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                    <h4>Ermənilər bu dəfə məşhur meyxanamızı oğurladılar</h4>
+                    <p>Məşhur meyxanaçı Ağamirzə Məmmədovun müəllifi olduğu meyxanamızı ifa edən ermənilər onu İrəvan...</p>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 27, 2016</span><span class="comments">3</span></div>
+                </div>
+            </div>
+            </a>
+            <a href="Pages/page_magasin/post33.html">
+            <div class="item" style="height: 258px;">
+                    <img src="images/magasin/33.jpg" class="img-responsive" alt="" style="height: 100%;">
+                <div class="layout-detail padding-25  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="icon-32 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                    <h4>Amaliya Pənahova mal-mülklərini reklam edən məşhurlara səsləndi</h4>
+                    <p>Xalq artisti Amaliya Pənahova var-dövlətini sosial şəbəkədə nümayiş etdirən...</p>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 27, 2016</span><span class="comments">3</span></div>
+                </div>
+            </div>
+            </a>
+            <a href="Pages/page_magasin/post34.html">
+            <div class="item" style="height:258px;">
+                    <img src="images/magasin/34.jpg" class="img-responsive" alt="" style="height: 100%;">
+                <div class="layout-detail padding-25  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="icon-32 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                    <h4>Tanınmış müğənnini polis bölməsinə apardılar</h4>
+                    <p>Türkiyəli müğənni Yıldız Tilbe Çeşmədə avtomobil qəzasına düşüb...</p>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 27, 2016</span><span class="comments">3</span></div>
+                </div>
+            </div>
+            </a>
+            <a href="Pages/page_magasin/post35.html">
+            <div class="item" style="height:258px;">
+                    <img src="images/magasin/35.jpg" class="img-responsive" alt="" style="height: 100%;">
+                <div class="layout-detail padding-25  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="icon-32 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                    <h4>Yaxta gəzintisində batan azərbaycanlı modelin </h4>
+                    <p>Bakıda dənizdə batan modelin meyiti tapılıb....</p>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 27, 2016</span><span class="comments">3</span></div>
+                </div>
+            </div>
+            </a>
+            <a href="Pages/page_magasin/post36.html">
+            <div class="item" style="height:258px;">
+                    <img src="images/magasin/36.jpg" class="img-responsive" alt="" style="height: 100%;">
+                <div class="layout-detail padding-25  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="icon-32 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                    <h4>Tanınmış müğənni vəfat etdi</h4>
+                    <p>Rusiyanın məşhur qrupu "İvanuşki International"ın keçmiş solisti Oleq Yakovlev vəfat edib...</p>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 27, 2016</span><span class="comments">3</span></div>
+                </div>
+            </div>
+            </a>
+            <a href="Pages/page_magasin/post37.html">
+            <div class="item" style="height:258px;">
+                    <img src="images/magasin/37.jpg" class="img-responsive" alt="" style="height: 100%;">
+                <div class="layout-detail padding-25  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="icon-32 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                    <h4>Azərbaycanın məşhur cütlüyü boşandı</h4>
+                    <p>Aparıcılar Zəhra Rüstəm və Cavid Osmanov boşanıblar...</p>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 27, 2016</span><span class="comments">3</span></div>
+                </div>
+            </div>
+            </a>
+        
+        </div>
+        <!-- ===============.=======End Slider-3================ -->
+        <!--=================LAYOUT-8===================-->
+        <div class="container margin-top-30">
+            <div class="row">
+                <div class="col-md-8 col-sm-8  fadeIn animated" style="visibility: visible;">
+                    <!--=================LAYOUT-7===================-->
+                    <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_magasin/post38.html"><img src="images/magasin/38.jpg" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post38.html">Ledi Qaqa gülüş hədəfi oldu</a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 22, 2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                    <a href="Pages/page_magasin/post39.html"><img src="images/magasin/39.jpeg" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post39.html">Bakıda 22 yaşlı model plastik əməliyyatdan sonra öldü</a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Brandon B.</span><span class="date">Sep. 20, 2016</span></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                    <a href="Pages/page_magasin/post40.html"><img src="images/magasin/40.jpg" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post40.html">Tanınmış müğənni boşanma səbəbini açıqladı</a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Brandon B.</span><span class="date">Sep. 20, 2016</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--=================LAYOUT-8===================-->
+                    <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_magasin/post41.html"><img src="images/magasin/41.jpg" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post41.html">Acun Ilıcalı özünə 3 gün, 3 gecə toy edəcək</a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Mahita G.</span><span class="date">Sep. 22, 2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                    <a href="Pages/page_magasin/post42.html"><img src="images/magasin/42.png" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post42.html">Ayaqlarına görə iş tapa bilməyən model</a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Brandon B.</span><span class="date">Sep. 20, 2016</span></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="layout_3--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                    <a href="Pages/page_magasin/post43.html"><img src="images/magasin/43.jpg" class="img-responsive" alt=""></a>
+                                </div>
+                                <h4 class="margin-top-30"><a href="Pages/page_magasin/post43.html">Türkiyəli iş adamına ərə gedən azərbaycanlı müğənnidən xəbər var</a></h4>
+                                <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Brandon B.</span><span class="date">Sep. 20, 2016</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <aside class="col-md-4 col-sm-4">
+                    <!--====================LAYOUT-ASIDE_4-======================-->
+                    <!--====================LAYOUT-ASIDE-SOCIAL======================-->
+                    <div class="side-widget margin-bottom-60">
+                        <h3 class="heading-1"><span>Lorem Social</span></h3>
+                        <div class="social">
+                            <div class="share s_facebook">
+                                <i class="fa fa-facebook"></i>
+                            
+                            </div>
+                            <div class="share s_linkedin">
+                                <i class="fa fa-linkedin"></i>
+                                
+                            </div>
+                            <div class="share s_plus">
+                                <i class="fa fa-google-plus"></i>
+                              
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+         <!--====================FOOTER======================-->
+         <footer class="bg-dark footer1 padding-top-60">
+                <div class="container-fluid">
+                    <div class="row margin-bottom-30">
+                        <div class="col-md-7 col-sm-4 margin-bottom-30 footer-info">
+                            <a href="index.html"><img src="images/flogo.png" class="img-responsive" alt=""/></a>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
+                                sit amet Lorem ipsum dolor sit amet </p>
+                            <span><i class="fa fa-map-marker"></i> AF Buisness House, CodeAcademy</span>
+                            <span><i class="fa fa-envelope"></i> <a href="mailto:pfiruze.p202@code.edu.az">pfiruza.p202@code.edu.az</a></span>
+                            <span><i class="fa fa-phone"></i> +994 77 554 21 01</span>
+                        </div>
+    
+                        <div class="col-md-5 col-sm-4 margin-bottom-30 footer-follow">
+                            <h5>bİzİ İzləyİn</h5>
+                            <div class="footer-newsletter">
+                                <form action="http://ckthemes.com/html/watcher/php/subscribe.php" id="invite1" method="POST">
+                                    <i class="fa fa-envelope"></i>
+                                    <input type="email" placeholder="Emailiniz" class="e-mail" name="email" id="address1" data-validate="validate(required, email)">
+                                    <button type="submit">Abunə ol</button>
+                                </form>
+                              
+                                <div id="result1"></div>
+                            </div>
+                            <div class="footer-social margin-top-30">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FOOTER COPYRIGHT -->
+                    <div class="footer-bottom">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <p>&copy; Copyright 2017 Watcher.com. Bütün hüquqlar qorunur.</p>
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <ul class="footer-links">
+                                    <li><a href="Contact.html">Əlaqə</a></li>
+                                    <li><a href="terms.html">İstifadəçi Qaydaları</a></li>
+                                    <li><a href="privacy.html">Gizlilik</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js">
+
+    </script>
+    <script src="js/index.js">
+
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/superfish.min.js"></script>
+</body>
+
+</html>

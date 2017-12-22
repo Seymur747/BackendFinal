@@ -1,0 +1,75 @@
+﻿@model temp0.Models.News
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/adm.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>News</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.longText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longText)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.shortText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.shortText)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.add_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.add_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Users.names)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Users.names)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.News_category.category_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.News_category.category_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.News_images.image_path)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.News_images.image_path)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.News_videos.video_path)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.News_videos.video_path)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

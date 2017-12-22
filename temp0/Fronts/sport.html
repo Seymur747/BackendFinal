@@ -1,0 +1,715 @@
+<!Doctype html>
+<html lang="En">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="News,Information">
+    <meta name="author" content="Firuze Rustemli">
+    <title>News</title>
+    <!-- Css -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,700,700i,900" rel="stylesheet">
+    <link href="asset/css/responsive.css" rel="stylesheet">
+    <link href="asset/css/animation.css" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <link href="asset/css/design.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/slicknav.css">
+    <link rel="stylesheet" href="asset/css/superfish.css">
+    <!-- SIDE -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- =============HEADER==================== -->
+        <header class="header margin-bottom-30">
+            <!-- =================BREAKING================ -->
+            <div class="bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8 hidden-xs">
+                            <div class="breaking">
+                                <span>Qaynar Xəbərlər:</span>
+                                <p class='heading'>
+                                    <span id='dynamicText'></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="pull-right options">
+                                <a href="#" class="subscribe">Abunə ol</a>
+                                <span>|</span>
+                                <a href="#" class="login">Qeydiyyat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =============WATCHER============= -->
+            <div class="clearfix"> </div>
+            <div class="watcher padding-vertical-10">
+                <div clsas="main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 logo">
+                                <a href="index-2.html"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <div class="col-md-9 col-sm-9 nav-wrapper">
+                                <nav>
+                                    <ul class="sf-menu" id="menu">
+                                        <li><a href="Index-2.html" class="green">Baş səhİfə <i class="fa fa-angle-down"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kateqorİya<i class="fa fa-angle-down"></i></a>
+                                            <ul class="animate">
+                                                <li><a href="economy.html">İqtisadiyyat</a></li>
+                                                <li>
+                                                    <a href="entertaintment.html">Maraqlı <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                                    <ul class="animate drop">
+                                                        <li><a href="magasin.html">Şou</a></li>
+                                                        <li><a href="food_health.html">Sağlamlıq </a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="sport.html">İdman</a></li>
+                                                <li><a href="social.html">Sosial</a></li>
+                                                <li><a href="world.html">Dünya</a></li>
+                                                <li><a href="criminal.html">Kriminal</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="tech.html">Komanda <i class="fa fa-angle-down"></i></a>
+                                        </li>
+                                        <li><a href="contact.html">Əlaqə</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===============MENU=============== -->
+            <div class="clearfix"> </div>
+        </header>
+        <!-- ===============.=======CONTENT================ -->
+        <div class="container margin-top-30">
+            <div class="row">
+                <!--======================PATH=========================-->
+                <div id="breadcrumbs" class="stuck_position margin-bottom-30">
+                    <div class="container">
+                        <div class="row">
+                            <div class="moduletable   col-sm-12">
+                                <div class="module_container">
+                                    <ul class="breadcrumb">
+                                        <li><a href="index-2.html" class="pathway">Baş səhifə</a></li>
+                                        <li><a href="index-2.html" class="pathway">Kateqoriya</a></li>
+                                        <li class="active"><span>İdman</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-8  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <!--=============================LAyout -1 ======================-->
+                    <h3 class="heading-1"><span>Əsas Xəbərlər</span></h3>
+                    <div class="layout_1 home4-masonry2 margin-bottom-50  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_1--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_sport/post1.html">
+                                        <div class="overlay  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <img src="images/sport/01.jpeg" style="height: 249px;" class="img-responsive" alt="">
+                                        <div class="layout-detail padding-20  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <h5>Prezident İlham Əliyev : "Bu qələbənin çox böyük mənası var" </h5>
+                                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 27, 2016</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_1--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_sport/post2.html">
+                                        <div class="overlay  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <img src="images/sport/02.jpg" style="height: 249px;" class="img-responsive" alt="">
+                                        <div class="layout-detail padding-20  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <h5>Bakının mərkəzində qələbə bayramı</h5>
+                                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 27, 2016</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_1--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_sport/post3.html">
+                                        <div class="overlay  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <img src="images/sport/03.jpg" style="height: 249px;" class="img-responsive" alt="">
+                                        <div class="layout-detail padding-20  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <h5>"Kopenhagen" - "Qarabağ"</h5>
+                                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 27, 2016</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_1--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_sport/post4.html">
+                                        <div class="overlay  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <img src="images/sport/04.jpg" style="height: 249px;" class="img-responsive" alt="">
+                                        <div class="layout-detail padding-20  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <h5>"Başakşehir" dirəyə ilişdi, Astanada qol şousu - </h5>
+                                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 27, 2016</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_1--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_sport/post5.html">
+                                        <div class="overlay  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <img src="images/sport/05.jpg" style="height: 249px;" class="img-responsive" alt="">
+                                        <div class="layout-detail padding-20  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <h5>Barselonanı qana bulayan əsas terrorçu həbs edildi</h5>
+                                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 27, 2016</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_1--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <a href="Pages/page_sport/post6.html">
+                                        <div class="overlay  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <img src="images/sport/07.jpg" style="height: 249px;" class="img-responsive" alt="">
+                                        <div class="layout-detail padding-20  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                            <h5>"Neftçi"nin baş məşqçisi istefa verdi - </h5>
+                                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 27, 2016</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ===============.=======ASIDE================ -->
+                <aside class="col-md-4 col-sm-4">
+                    <div class="side-widget margin-bottom-60  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <!-- ======================Trending Yenis================ -->
+                        <div class="side-widget margin-bottom-30 animated" style="visibility: visible;">
+                            <h3 class="heading-1"><span>yeni</span></h3>
+                            <ul class="trending-text">
+                                <li>
+                                    <em>1</em>
+                                    <p><a href="Pages/page_sport/post28.html">Boksçumuz dünya çempionatına qələbə ilə başladı</a>                                        <span>Sep 26, 2016</span></p>
+                                </li>
+                                <li>
+                                    <em>2</em>
+                                    <p><a href="Pages/page_sport/post29.html">Məhəmmədrəsul Məcidov 1/8 finalda</a> <span>Sep 26, 2016</span></p>
+                                </li>
+                                <li>
+                                    <em>3</em>
+                                    <p><a href="Pages/page_sport/post30.html">"Barselona" fransız futbolçuya 105 milyonluq avro verdi</a>                                        <span>Sep 26, 2016</span></p>
+                                </li>
+                                <li>
+                                    <em>2</em>
+                                    <p><a href="Pages/page_sport/post31.html">Güləşçimiz üçqat dünya çempionu oldu</a> <span>Sep 26, 2016</span></p>
+                                </li>
+                                <li>
+                                    <em>5</em>
+                                    <p><a href="Pages/page_sport/post32.html">“Atletiko”dan “Qarabağ”a TƏBRİK </a> <span>Sep 26, 2016</span></p>
+                                </li>
+                                <li>
+                                    <em>6</em>
+                                    <p><a href="Pages/page_sport/post33.html">"Tottenhem" ən bahalı transferini etdi</a> <span>Sep 26, 2016</span></p>
+                                </li>
+                                <li>
+                                    <em>6</em>
+                                    <p><a href="Pages/page_sport/post34.html">Cüdoçularımız universiada ilk qızıl medalı qazandı</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <!--====================LAYOUT-2=============================-->
+        <div class="container">
+            <div class="layout_2 margin-bottom-15  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="icon-24 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                <a href="Pages/page_sport/post7.html"><img src="images/sport/08.jpg" class="img-responsive" alt=""></a>
+                        </div>
+                        <h4><a href="#">Avropa Liqası: "Fənərbaxça" uduzdu</a></h4>
+                        <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                    </div>
+            </div>
+            <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <a href="Pages/page_sport/post8.html"> <img src="images/sport/09.jpg" style="height: 124px;" class="img-responsive" alt=""></a>
+                    </div>
+                    <h4><a href="#">Ən yaxşı futbolçu adına 22 namizəd </a></h4>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                        <a href="Pages/page_sport/post9.html"><img src="images/sport/10.jpg"  style="height: 124px;" class="img-responsive" alt=""></a>
+                    </div>
+                    <h4><a href="#">“Kopenhagen”in futbolçusu əməliyyat olundu</a></h4>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <a href="Pages/page_sport/post10.html"><img src="images/sport/11.jpg"  style="height: 124px;" class="img-responsive" alt=""></a>
+                    </div>
+                    <h4><a href="#">İspaniya Superkubokunun qalibi bəlli oldu</a></h4>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <a href="Pages/page_sport/post11.html"><img src="images/sport/12.jpg" style="height: 124px;" class="img-responsive" alt=""></a>
+                    </div>
+                    <h4><a href="#">Fransa millisinin üzvü "Yuventus"da</a></h4>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <a href="Pages/page_sport/post12.html"><img src="images/sport/13.jpg" style="height: 124px;" class="img-responsive" alt=""></a>
+                    </div>
+                    <h4><a href="#">Mançester Siti”dən 60 milyonluq təklif </a></h4>
+                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--====================VIDEO CAROUSEL======================-->
+    <h3 class="heading-1"><span>Videolar</span></h3>
+    <div class=" margin-top-30   fadeIn animated margin-bottom-60">
+        <div class="margin-top-30 video-carousel-wrap bg-dark">
+            <div class="container">
+                <div class="clearfix"></div>
+                <div class="col-md-8 col-sm-7 no-padding">
+                    <div class="video-container">
+                        <video id="video" width="400" onclick="togglePause()" controls>
+                            <source src="video/01.mp4" type="video/mp4">
+                        </video>
+                        <div class="layout_1--item vc-item1 active">
+                            <div class="video-play"></div>
+                            <span class="badge text-uppercase badge-overlay badge-tech">Lorem</span>
+                            <div class="overlay"></div>
+                            <img src="images/videos/1.png" class="img-responsive" alt="" />
+                            <div class="layout-detail padding-25">
+                                <h4>Avtobusda sernişin sürücü ilə dava etdi</h4>
+                                <div class="meta"><span class="author">by Firuze R.</span><span class="date">Sep. 27, 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layout_1--item vc-item2">
+                            <div class="video-play"></div>
+                            <span class="badge text-uppercase badge-overlay badge-tech">Lorem</span>
+                            <div class="overlay"></div>
+                            <img src="images/videos/02.jpg" class="img-responsive" alt="" />
+                            <div class="layout-detail padding-25">
+                                <h4>Ünvanlı sosial yardım artılacaq</h4>
+                                <div class="meta"><span class="author">by Firuze R.</span><span class="date">Sep. 27, 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layout_1--item vc-item3">
+                            <div class="video-play"></div>
+                            <span class="badge text-uppercase badge-overlay badge-tech">Tech</span>
+                            <div class="overlay"></div>
+                            <img src="images/videos/3.jpg" class="img-responsive" alt="" />
+                            <div class="layout-detail padding-25">
+                                <h4>Yeni ana olan mugennni ƏRİ VƏ ÖVLADI İLƏ- Shou biznes</h4>
+                                <div class="meta"><span class="author">by Firuze R
+                             </span><span class="date">Sep. 27, 2016</span><span class="comments">3</span>
+                                    <span class="views">284</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layout_1--item vc-item4">
+                            <div class="video-play"></div>
+                            <span class="badge text-uppercase badge-overlay badge-tech">Lorem</span>
+                            <div class="overlay"></div>
+                            <img src="images/videos/4.jpg" class="img-responsive" alt="" />
+                            <div class="layout-detail padding-25">
+                                <h4>İrana gedənlər məcburi sığortalanacaqlar I Xezer Xeber
+                                    </h4>
+                                <div class="meta"><span class="author">by Firuze R.</span><span class="date">Sep. 27, 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layout_1--item vc-item4">
+                            <div class="video-play"></div>
+                            <span class="badge text-uppercase badge-overlay badge-tech">Lorem</span>
+                            <div class="overlay"></div>
+                            <img src="images/videos/4.jpg" class="img-responsive" alt="" />
+                            <div class="layout-detail padding-25">
+                                <h4>İrana gedənlər məcburi sığortalanacaqlar I Xezer Xeber
+                                    </h4>
+                                <div class="meta"><span class="author">by Firuze R.</span><span class="date">Sep. 27, 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5 no-padding">
+                    <div class="now-playing">
+                        <i class="fa fa-play"></i>
+                        <p>Ən son baxılanlar</p>
+                    </div>
+                    <div class="video-list">
+                        <ul>
+                            <li class="vl-video1">
+                                <div class="thumb">
+                                    <div class="overlay-alt"></div>
+                                    <div class="video-play-32"></div>
+                                    <img src="images/videos/1.png" class="img-responsive" alt="" />
+                                </div>
+                                <p>Avtobusda sernişin sürücü ilə dava etdi</p>
+                            </li>
+                            <li class="vl-video2">
+                                <div class="thumb">
+                                    <div class="overlay-alt"></div>
+                                    <div class="video-play-32"></div>
+                                    <img src="images/videos/02.jpg" class="img-responsive" alt="" />
+                                </div>
+                                <p>Ünvanlı sosial yardım artılacaq</p>
+                            </li>
+                            <li class="vl-video3">
+                                <div class="thumb">
+                                    <div class="overlay-alt"></div>
+                                    <div class="video-play-32"></div>
+                                    <img src="images/videos/3.jpg" class="img-responsive" alt="" />
+                                </div>
+                                <p>Yeni ana olan müğənni əri və övladı ilə</p>
+                            </li>
+                            <li class="vl-video2">
+                                <div class="thumb">
+                                    <div class="overlay-alt"></div>
+                                    <div class="video-play-32"></div>
+                                    <img src="images/videos/4.jpg" class="img-responsive" alt="" />
+                                </div>
+                                <p>İrana gedənlər məcburi sığortalanacaqlar I Xezer Xeber
+                                        </p>
+                            </li>
+                            <li class="vl-video2">
+                                <div class="thumb">
+                                    <div class="overlay-alt"></div>
+                                    <div class="video-play-32"></div>
+                                    <img src="images/videos/4.jpg" class="img-responsive" alt="" />
+                                </div>
+                                <p>İrana gedənlər məcburi sığortalanacaqlar I Xezer Xeber
+                                        </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container margin-top-30">
+        <div class="row">
+            <!--====================Layout-2======================-->
+            <div class="layout_2 margin-bottom-15  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="icon-24 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                <a href="Pages/page_sport/post13.html"><img src="images/sport/14.jpg" class="img-responsive" alt=""></a>
+                            </div>
+                            <h4><a href="#">Qarabağdan azarkeşlərə müraciət</a></h4>
+                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <a href="Pages/page_sport/post14.html"><img src="images/sport/15.jpg" class="img-responsive" alt=""></a>
+                            </div>
+                            <h4><a href="#">ÇL-in ən yaxşı qolu</a></h4>
+                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <span class="date">Sep. 28, 2016</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                <a href="Pages/page_sport/post15.html"><img src="images/sport/16.jpg" class="img-responsive" alt=""></a>
+                            </div>
+                            <h4><a href="#">Cüdoçularımızın dünya reytinqi açıqlanıb</a></h4>
+                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <a href="Pages/page_sport/post16.html"><img src="images/sport/17.jpg" class="img-responsive" alt=""></a>
+                            </div>
+                            <h4><a href="#">"Real" "Barselonaya"ya ilk oyunda qalib gəldi</a></h4>
+                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <a href="Pages/page_sport/post17.html"><img src="images/sport/18.jpg" class="img-responsive" alt=""></a>
+                            </div>
+                            <h4><a href="#">Soldado “Fənərbaxça”ya keçir</a></h4>
+                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="layout_2--item  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="thumb margin-bottom-10  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <a href="Pages/page_sport/post18.html"><img src="images/sport/19.jpg" class="img-responsive" alt=""></a>
+                            </div>
+                            <h4><a href="#">“Neftçi” “Herta”-ya uduzdu</a></h4>
+                            <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <!--====================Layout-3======================-->
+                <h3 class="heading-1"><span>son xəbərlər</span></h3>
+                <div class="layout_3--item row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <a href="Pages/page_sport/post19.html"><img src="images/sport/21.jpg" class="img-responsive" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <span class="cat">Futbol</span>
+                        <h4><a href="Pages/page_sport/post19.html">Klublarımızın ÇL-dəkı ilkləri</a></h4>
+                        <p>Qarabağ” Azərbaycan futbolunda ilkə imza atıb. Apasport.az saytının məlumatına görə, Ağdam təmsilçisi
+                            Çempionla...
+                        </p>
+                        <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Rana F.</span><span class="date">Sep. 28, 2016</span></div>
+                    </div>
+                </div>
+                <div class="layout_3--item row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <a href="Pages/page_sport/post20.html"><img src="images/sport/21.jpg" class="img-responsive" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <span class="cat">Futbol</span>
+                        <h4><a href="Pages/page_sport/post20.html">Çempionlar Liqası: “Qarabağ” həlledici oyuna çıxacaq</a></h4>
+                        <p>Bu gün Çempionlar Liqasında III təsnifat mərhələsinin cavab oyunlarına start veriləcək...
+                        </p>
+                        <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Rana F.</span><span class="date">Sep. 28, 2016</span></div>
+                    </div>
+                </div>
+                <div class="layout_3--item row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <a href="Pages/page_sport/post21.html"><img src="images/sport/22.jpg" class="img-responsive" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <span class="cat">Boks</span>
+                        <h4><a href="Pages/page_sport/post21.html">Qadın boksçularımız  3 medal qazandı</a></h4>
+                        <p>New Zealand open the 2016 Rugby Championship by humiliating Australia 42-8 in the Bledisloe Cup</p>
+                        <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="author">by Rana F.</span><span class="date">Sep. 28, 2016</span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===============.=======ASIDE================ -->
+            <aside class="col-md-4 col-sm-4">
+                <div class="side-widget margin-bottom-60  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <!-- ======================Layout aside -social================ -->
+                    <div class="side-widget margin-bottom-60">
+                        <h3 class="heading-1"><span>sosial şəbəkə</span></h3>
+                        <div class="social">
+                            <div class="share s_facebook">
+                                <i class="fa fa-facebook"></i>
+                            </div>
+                            <div class="share s_linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                            <div class="share s_plus">
+                                <i class="fa fa-google-plus"></i>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- ======================Advertsment================ -->
+                    <div class="ads ad-300 margin-bottom-60  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <h3 class="heading-1"><span>Reklam</span></h3>
+                        <img src="images/Add/300x250.jpg" class="img-responsive" alt="">
+                    </div>
+                    <!-- ======================Layout-down================ -->
+                    <div class="side-widget margin-bottom-60  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <h3 class="heading-1  margin-top-60"><span>baş Xəbərlər</span></h3>
+                        <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="col-md-6 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_2--item margin-bottom-5  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="icon-24 gallery2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <a href="Pages/page_sport/post22.html"><img src="images/sport/25.jpg" class="img-responsive" alt=""></a>
+                                    </div>
+                                    <h4 class="margin-top-10"><a href="Pages/page_sport/post22.html">Gəncə stadionunda son vəziyyət haqqinda</a></h4>
+                                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_2--item margin-bottom-5  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <a href="Pages/page_sport/post23.html"><img src="images/sport/26.jpg" class="img-responsive" alt=""></a>
+                                    </div>
+                                    <h4 class="margin-top-10"><a href="Pages/page_sport/post22.html">Prezident "Dəniz Kuboku-2017”nin iştirakçılarını təbrik etdi </a></h4>
+                                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="col-md-6 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_2--item margin-bottom-5  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <a href="Pages/page_sport/post24.html"><img src="images/sport/27.jpg" class="img-responsive" alt=""></a>
+                                    </div>
+                                    <h4 class="margin-top-10"><a href="#">Yay Olimpiadası-2024-ün ev sahibi bəlli oldu</a></h4>
+                                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_2--item margin-bottom-5  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <div class="icon-24 video2  fadeIn" style="visibility: visible; animation-name: fadeIn;"></div>
+                                        <a href="Pages/page_sport/post25.html"><img src="images/sport/28.jpeg" class="img-responsive" alt=""></a>
+                                    </div>
+                                    <h4 class="margin-top-10"><a href="#">Daha bir məşhur futbolçu "pul atdığına" görə HƏBS EDİLDİ</a></h4>
+                                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="col-md-6 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_2--item margin-bottom-5  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <a href="Pages/page_sport/post26.html"><img src="images/sport/29.jpg" class="img-responsive" alt=""></a>
+                                    </div>
+                                    <h4 class="margin-top-10"><a href="Pages/page_sport/post26.html">Rusiya ev sahibliyindən məhrum olunur? </a></h4>
+                                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <div class="layout_2--item margin-bottom-5  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    <div class="thumb  fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                        <a href="Pages/page_sport/post27.html"><img src="images/sport/30.jpg" style="height: 123px;" class="img-responsive" alt=""></a>
+                                    </div>
+                                    <h4 class="margin-top-10"><a href="Pages/page_sport/post27.html">Qurban Qurbanov : “Vaxtımız azdı” </a></h4>
+                                    <div class="meta  fadeIn" style="visibility: visible; animation-name: fadeIn;"><span class="date">Sep. 28, 2016</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </aside>
+        </div>
+    </div>
+
+      <!--====================FOOTER======================-->
+      <footer class="bg-dark footer1 padding-top-60">
+            <div class="container-fluid">
+                <div class="row margin-bottom-30">
+                    <div class="col-md-7 col-sm-4 margin-bottom-30 footer-info">
+                        <a href="index.html"><img src="images/flogo.png" class="img-responsive" alt=""/></a>
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
+                            sit amet Lorem ipsum dolor sit amet </p>
+                        <span><i class="fa fa-map-marker"></i> AF Buisness House, CodeAcademy</span>
+                        <span><i class="fa fa-envelope"></i> <a href="mailto:pfiruze.p202@code.edu.az">pfiruza.p202@code.edu.az</a></span>
+                        <span><i class="fa fa-phone"></i> +994 77 554 21 01</span>
+                    </div>
+
+                    <div class="col-md-5 col-sm-4 margin-bottom-30 footer-follow">
+                        <h5>bİzİ İzləyİn</h5>
+                        <div class="footer-newsletter">
+                            <form action="http://ckthemes.com/html/watcher/php/subscribe.php" id="invite1" method="POST">
+                                <i class="fa fa-envelope"></i>
+                                <input type="email" placeholder="Emailiniz" class="e-mail" name="email" id="address1" data-validate="validate(required, email)">
+                                <button type="submit">Abunə ol</button>
+                            </form>
+                          
+                            <div id="result1"></div>
+                        </div>
+                        <div class="footer-social margin-top-30">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOOTER COPYRIGHT -->
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <p>&copy; Copyright 2017 Watcher.com. Bütün hüquqlar qorunur.</p>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <ul class="footer-links">
+                                <li><a href="Contact.html">Əlaqə</a></li>
+                                <li><a href="terms.html">İstifadəçi Qaydaları</a></li>
+                                <li><a href="privacy.html">Gizlilik</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js">
+
+    </script>
+    <script src="js/index.js">
+
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/superfish.min.js"></script>
+</body>
+
+</html>

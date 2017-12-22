@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS </title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+
+
+
+<script src="slider.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+http://ejob.az/is-elani/16219/
+http://ejob.az/is-elani/15742/
+http://ejob.az/is-elani/15635/

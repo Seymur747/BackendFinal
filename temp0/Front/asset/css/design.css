@@ -1,0 +1,118 @@
+.logo img {
+    width: 100%;
+}
+
+.sf-menu>li>a {
+    color: #464646;
+    padding: 20px 16px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.sf-menu>li {
+    margin-top: 0;
+    background: none;
+}
+
+.sf-menu ul {
+    border: 1px solid #fff;
+    box-shadow: none;
+}
+
+.sf-menu li li {
+    min-width: 170px;
+    height: auto;
+    line-height: 30px;
+    background: #4c4c4c;
+    color: #fff;
+    margin-right: 0;
+    transition: height 200ms ease-in;
+}
+
+.sf-menu li li a {
+    font-weight: normal !important;
+    font-size: 13px;
+    transition: all 0.4s ease;
+    padding: 0;
+    padding-left: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #fff;
+    border: 0;
+}
+
+.sf-menu li li li {
+    min-width: 170px;
+    height: auto;
+    line-height: 30px;
+    background: #4c4c4c;
+    color: #fff;
+    margin-right: 0;
+    transition: height 200ms ease-in;
+}
+
+.sf-menu li li li:hover>a {
+    color: #DA593F;
+}
+
+.sf-menu li:hover li:hover {
+    background: #4c4c4c;
+    transition: all .3s;
+}
+
+.sf-menu li:hover {
+    background: transparent;
+}
+
+.sf-menu>li:hover>a {
+    color: #abd46e;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+.slicknav_menu .slicknav_menutxt {
+    display: none;
+}
+
+.slicknav_menu .slicknav_icon {
+    margin: 0px;
+}
+
+.slicknav_nav a i {
+    display: none;
+}
+
+.fixed {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: rgba(218, 89, 63, 0.43);
+    transition: all 0.2s;
+}
+
+
+@media screen and (max-width: 991px) {
+    #menu {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+    }
+    header .logo {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 450px) and (min-width: 0px) {
+    header .logo img {
+        max-height: 36px;
+        width: auto;
+    }
+}

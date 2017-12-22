@@ -1,0 +1,35 @@
+﻿@model temp0.Models.News_subcategory
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/adm.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>News_subcategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.subcategory_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcategory_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.News_category.category_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.News_category.category_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

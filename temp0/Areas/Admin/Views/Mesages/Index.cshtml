@@ -1,0 +1,47 @@
+﻿@model IEnumerable<temp0.Models.Mesages>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/adm.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.texts)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.writer_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.writer_email)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+  
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.texts)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.writer_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.writer_email)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
